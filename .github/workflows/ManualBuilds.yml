@@ -7,6 +7,10 @@ on:
         description: 'Release Name'
         required: true
         default: 'Prismatic Factory Update'
+      ver:
+        description: 'Version'
+        required: true
+        default: '1.11.124'
       desc:
         description: 'Description'
         required: true
@@ -36,7 +40,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.event.inputs.release }}
+        tag_name: ${{ github.event.inputs.ver }}
         release_name: ${{ github.event.inputs.release }}
         body: ${{ github.event.inputs.desc }}
         draft: false

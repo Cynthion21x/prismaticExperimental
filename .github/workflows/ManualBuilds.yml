@@ -1,9 +1,16 @@
-name: Commit Auto Build
+name: Commit Manual Builds
 
 on:
-  push:
-    paths:
-      - "mod.hjson"
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Release Name'
+        required: true
+        default: 'Prismatic Factory Update'
+      desc:
+        description: 'Description'
+        required: true
+        default: 'Adds lots of new content like the d-compressor'
 
 jobs:
   buildJar:
@@ -29,10 +36,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.run_id }}
-        release_name: Release ${{ github.run_id }}
+        tag_name: ${{ github.event.inputs.release }}
+        release_name: ${{ github.event.inputs.release }}
+        body: ${{ github.event.inputs.desc }}
         draft: false
-        prerelease: true
+        prerelease: false
 
     - name: Upload Assets
       uses: actions/upload-release-asset@v1

@@ -35,11 +35,7 @@ import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{
 
-  public static Block
-
-  //Crafting
-
-  d-compressor;
+  public static Block d-compressor;
 
   @Override
   public void load(){

@@ -18,20 +18,12 @@ public class Prismatic extends Mod{
   };
 
 
+        @Override
+      public void loadContent(){
+          for(ContentList list : prismContent){
+              list.load();
 
-
-
-
-    @Override
-    public void loadContent(){
-        for(contentList : List prismContent){
-            list.load();
-
-        }
-
-
-
+              //I hate this loop
+          }
       }
-
-
 }

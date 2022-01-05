@@ -22,15 +22,9 @@ public class Prismatic extends Mod{
 
 
 
-    public Prismatic(){
-        Log.info("Loaded Prismatic constructor.");
-
-
-
     @Override
     public void loadContent(){
         for(contentList : List Prismcontent){
-
             list.load();
 
         }
@@ -39,5 +33,6 @@ public class Prismatic extends Mod{
 
         Log.info("Your gonna burn alright");
     }
+
 
 }

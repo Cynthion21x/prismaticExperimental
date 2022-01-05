@@ -31,7 +31,7 @@ public class Prismatic extends Mod{
       });
   }
 
-  private static final ContentList[] content = {
+  private static final ContentList[] contentList = {
     new PrismStatusEffects()
   };
 

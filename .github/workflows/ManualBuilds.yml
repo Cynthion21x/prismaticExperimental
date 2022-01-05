@@ -1,4 +1,4 @@
-name: Commit Manual Builds
+name: Manual Builds
 
 on:
   workflow_dispatch:

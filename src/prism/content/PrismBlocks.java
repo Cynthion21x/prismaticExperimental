@@ -35,12 +35,12 @@ import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{
 
-  public static Block d-compressor;
+  public static Block dcompressor;
 
   @Override
   public void load(){
 
-    d-compressor = new GenericCrafter("D-Compressor"){{
+    dcompressor = new GenericCrafter("D-Compressor"){{
     requirements(Category.crafting, with(Items.lead, 120, Items.copper, 60, Items.titanium, 100, Items.silicon, 40));
 
     size = 2;

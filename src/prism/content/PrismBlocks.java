@@ -47,7 +47,7 @@ public class PrismBlocks implements ContentList{
     hasItems = true;
     craftTime = 90;
     craftEffect = Fx.smeltsmoke;
-    outputItem = new ItemStack(Items.diron, 1);
+    outputItem = new ItemStack(PrismItems.diron, 1);
 
     consumes.power(1.8f);
     consumes.items(with(Items.titanium, 2));

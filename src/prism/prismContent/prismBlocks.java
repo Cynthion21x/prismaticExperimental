@@ -65,4 +65,5 @@ public void load(){
     consumes.item(Items.titanium, 2);
   }};
 
+  }
 }

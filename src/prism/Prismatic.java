@@ -24,15 +24,14 @@ public class Prismatic extends Mod{
 
     @Override
     public void loadContent(){
-        for(contentList : List Prismcontent){
+        for(contentList : List prismContent){
             list.load();
 
         }
 
 
 
-        Log.info("Your gonna burn alright");
-    }
+      }
 
 
 }

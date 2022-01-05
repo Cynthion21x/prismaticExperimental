@@ -1,71 +1,45 @@
 package prism.content;
 
-import arc.Core;
-import arc.graphics.Color;
-import arc.graphics.Pixmaps;
-import arc.graphics.g2d.Draw;
-import arc.graphics.g2d.Lines;
-import arc.graphics.g2d.TextureAtlas;
-import arc.graphics.g2d.TextureRegion;
-import arc.math.Interp;
-import arc.math.Mathf;
+import arc.*;
+import arc.graphics.*;
+import arc.graphics.g2d.*;
+import arc.math.*;
+import arc.util.*;
+import betamindy.*;
+import betamindy.graphics.*;
+import betamindy.type.*;
+import betamindy.util.*;
+import mindustry.*;
+import mindustry.content.*;
+import mindustry.core.*;
 import mindustry.ctype.ContentList;
-import mindustry.entities.Effect;
-import mindustry.entities.effect.MultiEffect;
-import mindustry.gen.Unit;
-import mindustry.graphics.Layer;
-import mindustry.graphics.MultiPacker;
-import mindustry.graphics.Pal;
+import mindustry.entities.*;
+import mindustry.entities.units.WeaponMount;
+import mindustry.gen.*;
+import mindustry.graphics.*;
 import mindustry.type.StatusEffect;
+import mindustry.ui.*;
+import mindustry.world.meta.*;
 
 import prism.Prismatic;
 
-public class PrismStatusEffects implements ContentList{
+public class PrismStatusEffects implements ContentList {
 
-    public static StatusEffect
-      crippled;
+  public static StatusEffect crippled;
 
-    @Override public void load(){
+  @Override
+    public void load(){
 
-      crippled = new PrismStatusEffect("Crippled") {{
+      crippled = new StatusEffect("Crippled") {
+        {
+          damage = 5f;
+          speedMultiplier = 0.5f;
+          buildSpeedMultiplier = -100f;
+          healthMultiplier = 0.8f;
 
-        damage = 5f;
-        speedMultiplier = 0.5f;
-        buildSpeedMultiplier = 0.5f;
-        healthMultiplier = 0.8f;
+          Color = PrismColours.hotPink;
+        }
+      };
 
-        textureColor = color = PrismColours.hotPink;
-
-      }};
-
-      public class PrismStatusEffect extends StatusEffect {
-
-          public colour textureColour = null;
-
-          public PrismStatusEffect(String name){
-
-              super(name);
-
-          }
-
-          @Override
-          public void createIcons(MultiPacker packer) {
-
-            if((fullIcon != null && fullIcon.found() && fullIcon instanceof TextureAtlas.AtlasRegion)){
-
-      				if(textureColor != null){
-
-      					packer.add(MultiPacker.PageType.main, name + "-full", NHPixmap.fillColor(Core.atlas.getPixmap(fullIcon), textureColor).outline(Color.valueOf("404049"), 3));
-
-      				} else {
-
-      					packer.add(MultiPacker.PageType.main, name + "-full", Pixmaps.outline(Core.atlas.getPixmap(fullIcon), Color.valueOf("404049"), 3));
-      				}
-      			}
-
-          }
-
-      }
     }
-
 }

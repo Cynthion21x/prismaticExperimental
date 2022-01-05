@@ -30,7 +30,6 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
-
 import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{

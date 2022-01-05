@@ -39,7 +39,8 @@ public class Prismatic extends Mod{
   public void loadContent(){
       Log.info("Loading content..");
 
-
+      //load
+      for(ContentList contentList : content)contentList.load();
 
       Log.info("Content Loaded!");
   }

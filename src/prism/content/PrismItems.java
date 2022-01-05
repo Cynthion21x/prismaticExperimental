@@ -5,7 +5,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 
 public class PrismItems implements ContentList{
-	public static Item diron;
+	public static Item d-iron;
 
 	@Override
     public void load(){

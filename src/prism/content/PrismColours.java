@@ -1,4 +1,4 @@
-package prism.StatusEffect
+package prism.content;
 
 import arc.graphics.Color;
 import arc.graphics.Colors;
@@ -9,7 +9,7 @@ public class NHColor{
 	public static Color
 
 		hotPink = Color.valueOf("#ff33cc"),
-		impureGreen = Color.valueOf("#385947")
+		impureGreen = Color.valueOf("#385947");
 
 	static{
 		Colors.put("heal", Pal.heal);

@@ -1,4 +1,4 @@
-package prism
+package prism;
 
 import arc.*;
 import arc.util.*;

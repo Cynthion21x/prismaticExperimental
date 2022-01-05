@@ -22,6 +22,7 @@ public class Prismatic extends Mod{
       public void loadContent(){
           new PrismStatusEffects().load();
           new PrismItems().load();
+          new PrismLiquids().load();
           new PrismBlocks().load();
 
       }

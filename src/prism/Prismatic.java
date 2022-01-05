@@ -12,7 +12,7 @@ import mindustry.ui.dialogs.*;
 public class Prismatic extends Mod{
 
     public Prismatic(){
-        Log.info("Loaded Prismatic constructor.");
+        Log.info("Loaded Prismatic constructor. eeee");
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {

@@ -9,7 +9,7 @@ public class PrismItems implements ContentList{
 
 	@Override
     public void load(){
-    	diron = new Item("D-Iron", Color.valueOf("c42b9e")){{
+    	d-iron = new Item("d-iron", Color.valueOf("c42b9e")){{
             cost = 2f;
         }};
 

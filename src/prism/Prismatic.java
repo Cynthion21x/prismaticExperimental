@@ -32,6 +32,11 @@ public class Prismatic extends Mod{
   }
 
 
+  private static final ContentList[] content = {
+		new PrismStatusEffects(),
+    new PrismColours()
+
+	};
 
   @Override
   public void loadContent(){

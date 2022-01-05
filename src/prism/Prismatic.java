@@ -31,8 +31,14 @@ public class Prismatic extends Mod{
       });
   }
 
+<<<<<<< HEAD
   private static final ContentList[] contentList = {
     new PrismStatusEffects()
+=======
+  private static final ContentList[] PrismaticContent = {
+    new PrismStatusEffects(),
+    new PrismColours()
+>>>>>>> 0d07c84ece12504da9fa8ec739757cd8814954ee
   };
 
   @Override
@@ -40,7 +46,11 @@ public class Prismatic extends Mod{
       Log.info("Loading content..");
 
       //load
-      for(ContentList contentList : content)contentList.load();
+      for(ContentList list : PrismaticContent) {
+
+        list.load();
+
+      }
 
       Log.info("Content Loaded!");
   }

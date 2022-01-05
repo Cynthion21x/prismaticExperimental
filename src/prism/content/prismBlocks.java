@@ -53,7 +53,7 @@ public void load(){
     ));
 
     craftEffect = Fx.fuelburn;
-    outputItem = new ItemStack(Items., 1);
+    outputItem = new ItemStack(Items.diron, 1);
     craftTime  = 60f;
     size = 2;
     hasPower = hasItems = hasLiquids = true;

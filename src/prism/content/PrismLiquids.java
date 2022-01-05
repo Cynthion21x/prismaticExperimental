@@ -7,7 +7,7 @@ import mindustry.type.*;
 public class PrismLiquids implements ContentList{
 	public static Liquid dwave;
 
-	@Override
+	   @Override
     public void load(){
     	dwave = new Liquid("dwave", Color.valueOf("ff33cc")){{
         temperature = 1f;

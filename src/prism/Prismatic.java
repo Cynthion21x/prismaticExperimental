@@ -11,7 +11,7 @@ import mindustry.ui.dialogs.*;
 
 public class Prismatic extends Mod{
 
-  private final contentList[] content = {
+  private final contentList[] prismContent = {
 
     new prismBlocks()
 
@@ -29,7 +29,7 @@ public class Prismatic extends Mod{
 
     @Override
     public void loadContent(){
-        for(contentList : List content){
+        for(contentList : List Prismcontent){
 
             list.load();
 

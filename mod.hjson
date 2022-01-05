@@ -5,5 +5,5 @@ description: "Prismatic[] introduces lots of new technology capable of bending t
 version: "1.10.127"
 minGameVersion: "135"
 
-main: "prism.PrismaticMain"
+main: "prism.Prismatic"
 java: true

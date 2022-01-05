@@ -18,24 +18,25 @@ import mindustry.ui.*;
 import mindustry.world.meta.*;
 
 import prism.Prismatic;
+import prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
   public static StatusEffect crippled;
 
   @Override
-    public void load(){
+  public void load() {
 
-      crippled = new StatusEffect("Crippled") {
-        {
-          damage = 5f;
-          speedMultiplier = 0.5f;
-          buildSpeedMultiplier = -100f;
-          healthMultiplier = 0.8f;
+    crippled = new StatusEffect("Crippled") {
+      {
+        damage = 5f;
+        speedMultiplier = 0.5f;
+        buildSpeedMultiplier = -100f;
+        healthMultiplier = 0.8f;
 
-          Color = PrismColours.hotPink;
-        }
-      };
+        Color = PrismColours.hotPink;
+      }
+    };
 
-    }
+  }
 }

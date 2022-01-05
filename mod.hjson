@@ -5,5 +5,5 @@ description: "[magenta]Prismatic[] introduces lots of new technolicy capable of 
 version: "1.10.125"
 minGameVersion: "135"
 
-main: "prism.prismatic"
+main: "prism.PrismaticMain"
 java: true

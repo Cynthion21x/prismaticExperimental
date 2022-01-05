@@ -9,9 +9,9 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class Prismatic extends Mod{
+public class PrismaticMain extends Mod{
 
-    public Prismatic(){
+    public PrismaticMain(){
         Log.info("Loaded Prismatic constructor.");
 
         //listen for game load event

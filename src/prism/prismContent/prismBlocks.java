@@ -44,7 +44,7 @@ public void load(){
 
   //region crafting
 
-    Dfactory = new GenericCrafter("d-compressor"){{
+    Dcompressor = new GenericCrafter("d-compressor"){{
     requirements(Category.crafting, with(
       Items.lead, 120,
       Items.titanium, 100,

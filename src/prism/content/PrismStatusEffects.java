@@ -27,7 +27,7 @@ public class PrismStatusEffects implements ContentList {
   @Override
   public void load() {
 
-    crippled = new StatusEffect("Crippled") {
+    crippled = new StatusEffect("crippled") {
       {
         damage = 5f;
         speedMultiplier = 0.5f;

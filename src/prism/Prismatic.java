@@ -21,7 +21,7 @@ public class Prismatic extends Mod{
       @Override
       public void loadContent(){
           new PrismStatusEffects().load();
-          new PrismColours().load();
+        
 
       }
 

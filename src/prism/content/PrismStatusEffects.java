@@ -5,10 +5,6 @@ import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.util.*;
-import betamindy.*;
-import betamindy.graphics.*;
-import betamindy.type.*;
-import betamindy.util.*;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.core.*;
@@ -20,6 +16,8 @@ import mindustry.graphics.*;
 import mindustry.type.StatusEffect;
 import mindustry.ui.*;
 import mindustry.world.meta.*;
+
+import prism.Prismatic;
 
 import prism.Prismatic;
 

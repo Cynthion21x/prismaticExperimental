@@ -4,7 +4,7 @@ import arc.graphics.Color;
 import arc.graphics.Colors;
 import mindustry.graphics.Pal;
 
-public class NHColor{
+public class PrismColors{
 
 	public static Color
 

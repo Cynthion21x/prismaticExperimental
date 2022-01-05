@@ -50,8 +50,9 @@ public class PrismBlocks implements ContentList{
       outputItem = new ItemStack(PrismItems.diron, 1);
 
       consumes.power(1.8f);
+      consumes.liquid(PrismLiquids.dwave, 0.2f);
       consumes.items(with(Items.titanium, 2));
-      consumes.liquids(PrismLiquids.dwave, 0.2f);
+
 
       itemCapacity = 30;
 			liquidCapacity = 30;

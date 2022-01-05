@@ -6,9 +6,10 @@ import mindustry.graphics.Pal;
 
 public class PrismColours{
 
-	public static Color
+		public void load(){
+		public static Color
 
 		hotPink = Color.valueOf("#FF33CC"),
 		impureGreen = Color.valueOf("#385947");
-
+	}
 }

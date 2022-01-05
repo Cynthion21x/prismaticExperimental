@@ -1,51 +1,30 @@
 package prism;
 
+// Arc Package
 import arc.*;
 import arc.util.*;
+// Mindustry Package
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+// Vanilla Upgraded Package
+import prism.content.*;
 
 public class Prismatic extends Mod{
 
-  public Prismatic(){
 
-      Log.info("Loaded Prismatic constructor.");
+      public Prismatic(){}
 
+      @Override
+      public void loadContent(){
+          new PrismStatusEffects().load();
+          new PrismColours().load();
 
-      Events.on(ClientLoadEvent.class, e -> {
-
-          //change Log
-
-          Time.runTask(10f, () -> {
-              BaseDialog dialog = new BaseDialog("Change Log");
-
-              dialog.cont.add("- Port from Hjosn to Java").row();
-
-              dialog.cont.button("Confirm", dialog::hide).size(100f, 50f);
-              dialog.show();
-          });
-      });
-  }
+      }
 
 
-  private static final ContentList[] content = {
-		new PrismStatusEffects(),
-    new PrismColours()
-
-	};
-
-  @Override
-  public void loadContent(){
-      Log.info("Loading content..");
-
-      new PrismStatusEffects().load();
-      new PrismColours().load();
-
-      Log.info("Content Loaded!");
-  }
 
 }

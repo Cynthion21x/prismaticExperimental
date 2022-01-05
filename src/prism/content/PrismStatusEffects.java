@@ -34,7 +34,8 @@ public class PrismStatusEffects implements ContentList {
         buildSpeedMultiplier = -100f;
         healthMultiplier = 0.8f;
 
-        Color = PrismColours.hotPink;
+        //Color = PrismColours.hotPink;
+        color = Color.valueOf("#FF33CC")
       }
     };
 

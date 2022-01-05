@@ -13,7 +13,7 @@ public class prismLiquids implements ContentList{
   @Override
   public void load(){
 
-      dwave = new Item("d-wave", Color.valueOf("ff33cc")){{
+      dwave = new Liquid("d-wave", Color.valueOf("ff33cc")){{
       temperature = 1f;
       viscosity = 0.4f;
       heatCapacity = 1.4f;

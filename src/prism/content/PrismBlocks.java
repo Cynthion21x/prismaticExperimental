@@ -29,7 +29,7 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
-
+import prism.PrismItems.*;
 import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{
@@ -39,7 +39,7 @@ public class PrismBlocks implements ContentList{
   @Override
   public void load(){
 
-    dcompressor = new GenericCrafter("d-compressor"){{
+    dcompressor = new GenericCrafter("D-Compressor"){{
     requirements(Category.crafting, with(Items.lead, 120, Items.copper, 60, Items.titanium, 100, Items.silicon, 40));
 
     size = 2;

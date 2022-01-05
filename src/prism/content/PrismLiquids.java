@@ -4,7 +4,7 @@ import arc.graphics.*;
 import mindustry.ctype.*;
 import mindustry.type.*;
 
-public class PrismItems implements ContentList{
+public class PrismLiquids implements ContentList{
 	public static Liquid dwave;
 
 	@Override

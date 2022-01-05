@@ -19,8 +19,6 @@ import mindustry.world.meta.*;
 
 import prism.Prismatic;
 
-import prism.Prismatic;
-
 public class PrismStatusEffects implements ContentList {
 
   public static StatusEffect crippled;

@@ -38,19 +38,24 @@ public class PrismBlocks implements ContentList{
   @Override
   public void load(){
 
-    dcompressor = new GenericCrafter("D-Compressor"){{
-    requirements(Category.crafting, with(Items.lead, 120, Items.copper, 60, Items.titanium, 100, Items.silicon, 40));
+    dcompressor = new GenericCrafter("dcompressor"){{
+      requirements(Category.crafting, with(Items.lead, 120, Items.copper, 60, Items.titanium, 100, Items.silicon, 40));
 
-    size = 2;
-    hasPower = true;
-    hasLiquids = false;
-    hasItems = true;
-    craftTime = 90;
-    craftEffect = Fx.smeltsmoke;
-    outputItem = new ItemStack(PrismItems.diron, 1);
+      size = 2;
+      hasPower = true;
+      hasLiquids = true;
+      hasItems = true;
+      craftTime = 90;
+      craftEffect = Fx.smeltsmoke;
+      outputItem = new ItemStack(PrismItems.diron, 1);
 
-    consumes.power(1.8f);
-    consumes.items(with(Items.titanium, 2));
+      consumes.power(1.8f);
+      consumes.liquid(PrismLiquids.dwave, 0.2f);
+      consumes.items(with(Items.titanium, 2));
+
+
+      itemCapacity = 30;
+			liquidCapacity = 30;
     }};
 
 

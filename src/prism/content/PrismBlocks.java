@@ -43,7 +43,7 @@ public class PrismBlocks implements ContentList{
 
       size = 2;
       hasPower = true;
-      hasLiquids = false;
+      hasLiquids = true;
       hasItems = true;
       craftTime = 90;
       craftEffect = Fx.smeltsmoke;
@@ -51,6 +51,7 @@ public class PrismBlocks implements ContentList{
 
       consumes.power(1.8f);
       consumes.items(with(Items.titanium, 2));
+      consumes.liquids(with(PrismLiquids.dwave, 2));
     }};
 
 

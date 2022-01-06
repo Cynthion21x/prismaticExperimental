@@ -33,7 +33,7 @@ import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{
 
-  public static Block dcompressor, dextractor, dfilter;
+  public static Block dcompressor, dextractor, dfilter, vibrocannon;
 
   @Override
   public void load(){
@@ -90,6 +90,15 @@ public class PrismBlocks implements ContentList{
 			liquidCapacity = 60;
     }};
 
+
+
+    /*vibrocannon = new LiquidTurret("vibrocannon"){{
+      requirements(Category.turret, with(Items.lead, 150, Items.titanium, 50, Items.thorium, 20, Items.graphite, 60, Items.silicon, 120, PrismItems.diron, 20));
+
+
+
+    }};
   }
+  */
 
 }

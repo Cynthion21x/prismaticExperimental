@@ -62,7 +62,7 @@ public class PrismBlocks implements ContentList{
 
 
     dextractor = new SolidPump("dextractor"){{
-    size = 2;
+    size = 3;
     pumpAmount = 0.1f;
     requirements(Category.production, ItemStack.with(Items.copper, 200, Items.lead, 70, Items.thorium, 100, Items.titanium, 70));
 

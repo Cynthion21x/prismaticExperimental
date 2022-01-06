@@ -75,7 +75,7 @@ public class PrismBlocks implements ContentList{
 
 
     dfilter = new LiquidConverter("dfilter"){{
-      requirements(Category.crafting, with(Items.lead, 50, Items.copper, 120, Items.thorim, 80, Items.titanium, 60));
+      requirements(Category.crafting, with(Items.lead, 50, Items.copper, 120, Items.thorium, 80, Items.titanium, 60));
 
       size = 3;
       hasPower = true;

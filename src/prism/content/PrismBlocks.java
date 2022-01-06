@@ -33,7 +33,7 @@ import static mindustry.type.ItemStack.*;
 
 public class PrismBlocks implements ContentList{
 
-  public static Block dcompressor, dextractor;
+  public static Block dcompressor, dextractor, dfilter;
 
   @Override
   public void load(){
@@ -71,6 +71,23 @@ public class PrismBlocks implements ContentList{
     rotateSpeed = 1.4F;
     attribute = Attribute.water;
     consumes.power(3f);
+    }};
+
+
+    dfilter = new LiquidConverter("dfilter"){{
+      requirements(Category.crafting, with(Items.lead, 50, Items.copper, 120, Items.thorim, 80, Items.titanium, 60));
+
+      size = 3;
+      hasPower = true;
+      hasLiquids = true;
+      craftTime = 3;
+      craftEffect = Fx.purify;
+      outputLiquid = new LiquidStack(PrismLiquids.dwave, 6f);
+      consumes.power(1.8f);
+      consumes.liquid(PrismLiquids.impuredwave, 0.1f);
+
+
+			liquidCapacity = 60;
     }};
 
   }

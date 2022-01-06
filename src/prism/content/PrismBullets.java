@@ -14,11 +14,12 @@ import mindustry.world.*;
 import mindustry.content.*;
 
 public class PrismBullets implements ContentList{
-	/*public static BulletType vibroWater, vibroDwave, vibroCryo, vibroImpureDwave;
+	//public static BulletType vibroWater, vibroDwave, vibroCryo, vibroImpureDwave;
 
 	   @Override
     public void load(){
-      vibroWater = new LiquidBulletType(4f, 23){{
+
+      /*vibroWater = new LiquidBulletType(4f, 23){{
         drag = 0.03f;
         speed = 15f;
         knockback = 2f;
@@ -27,7 +28,7 @@ public class PrismBullets implements ContentList{
         ammoMultiplier = 1f;
         status = wet;
       }};
+      */
 
-
-    }*/
+    }
 }

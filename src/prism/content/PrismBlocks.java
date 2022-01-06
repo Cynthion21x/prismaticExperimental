@@ -66,7 +66,7 @@ public class PrismBlocks implements ContentList{
     pumpAmount = 0.1f;
     requirements(Category.production, ItemStack.with(Items.copper, 200, Items.lead, 70, Items.thorium, 100, Items.titanium, 70));
 
-    result = PrismLiquids.dwave;
+    result = PrismLiquids.impuredwave;
     liquidCapacity = 20.0F;
     rotateSpeed = 1.4F;
     attribute = Attribute.water;

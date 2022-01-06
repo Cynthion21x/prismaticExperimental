@@ -62,7 +62,7 @@ public class PrismBlocks implements ContentList{
 
 
     dextractor = new SolidPump("dextractor"){{
-    size = 2;
+    size = 3;
     pumpAmount = 0.1f;
     requirements(Category.production, ItemStack.with(Items.copper, 200, Items.lead, 70, Items.thorium, 100, Items.titanium, 70));
 
@@ -75,7 +75,7 @@ public class PrismBlocks implements ContentList{
 
 
     dfilter = new LiquidConverter("dfilter"){{
-      requirements(Category.crafting, with(Items.lead, 50, Items.copper, 120, Items.thorim, 80, Items.titanium, 60));
+      requirements(Category.crafting, with(Items.lead, 50, Items.copper, 120, Items.thorium, 80, Items.titanium, 60));
 
       size = 3;
       hasPower = true;

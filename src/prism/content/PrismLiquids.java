@@ -5,7 +5,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 
 public class PrismLiquids implements ContentList{
-	public static Liquid dwave;
+	public static Liquid dwave, impuredwave;
 
 	   @Override
     public void load(){

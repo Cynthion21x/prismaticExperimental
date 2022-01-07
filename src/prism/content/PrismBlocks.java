@@ -62,15 +62,15 @@ public class PrismBlocks implements ContentList{
 
 
     dextractor = new SolidPump("dextractor"){{
-    size = 3;
-    pumpAmount = 0.1f;
-    requirements(Category.production, ItemStack.with(Items.copper, 200, Items.lead, 70, Items.thorium, 100, Items.titanium, 70));
+      size = 3;
+      pumpAmount = 0.1f;
+      requirements(Category.production, ItemStack.with(Items.copper, 200, Items.lead, 70, Items.thorium, 100, Items.titanium, 70));
 
-    result = PrismLiquids.impuredwave;
-    liquidCapacity = 20.0F;
-    rotateSpeed = 1.4F;
-    attribute = Attribute.water;
-    consumes.power(3f);
+      result = PrismLiquids.impuredwave;
+      liquidCapacity = 20.0F;
+      rotateSpeed = 1.4F;
+      attribute = Attribute.water;
+      consumes.power(3f);
     }};
 
 
@@ -82,6 +82,9 @@ public class PrismBlocks implements ContentList{
       hasLiquids = true;
       craftTime = 3;
       craftEffect = Fx.purify;
+
+      drawer = new DrawMixer(true);
+
       outputLiquid = new LiquidStack(PrismLiquids.dwave, 6f);
       consumes.power(1.8f);
       consumes.liquid(PrismLiquids.impuredwave, 0.1f);

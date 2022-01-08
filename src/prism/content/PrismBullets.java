@@ -14,9 +14,10 @@ import mindustry.world.*;
 import mindustry.content.*;
 
 public class PrismBullets implements ContentList{
-	//public static BulletType vibroWater, vibroDwave, vibroCryo, vibroImpureDwave;
 
-	   @Override
+		//public static BulletType vibroShock;
+
+	  @Override
     public void load(){
 
       /*vibroWater = new LiquidBulletType(4f, 23){{

@@ -31,12 +31,22 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.*;
 
+import prism.entities.bullet.*;
+
 public class PrismBlocks implements ContentList{
 
-  public static Block dcompressor, dextractor, dfilter, vibrocannon;
+  // factorys
+  public static Block
+   dcompressor, dextractor, dfilter;
+
+  // Turrets
+  public static Block
+   vibrocannon;
 
   @Override
   public void load(){
+
+    // factorys
 
     dcompressor = new GenericCrafter("dcompressor"){{
       requirements(Category.crafting, with(Items.lead, 120, Items.copper, 60, Items.titanium, 100, Items.silicon, 40));
@@ -93,7 +103,37 @@ public class PrismBlocks implements ContentList{
 			liquidCapacity = 60;
     }};
 
+    // Turrets
+    vibrocannon = new LiquidTurret("vibrocannon"){{
 
+      requirements(Category.turret, with(Items.lead, 150, Items.titanium, 50, Items.thorium, 20, Items.graphite, 60, Items.silicon, 120, PrismItems.diron, 20));
+
+      ammo (
+
+        PrismLiquids.dwave, new shockwave(10f, 60f, PrismStatusEffecs.crippled) {{
+
+              fromColor = toColor = hitColor = Color.valueOf("ff33cc");
+              lifetime = 60f;
+              ammoMultiplier = 4f;
+              reloadMultiplier = 2.5f;
+
+        }}
+
+      )
+
+      reloadTime = 5f;
+
+      size = 4f;
+
+      extinguish = false;
+      recoilAmount = 0f;
+
+      liquidCapacity = 40f;
+
+      range = 65f;
+      health = 1200;
+
+    }}
 
     /*vibrocannon = new LiquidTurret("vibrocannon"){{
       requirements(Category.turret, with(Items.lead, 150, Items.titanium, 50, Items.thorium, 20, Items.graphite, 60, Items.silicon, 120, PrismItems.diron, 20));

@@ -25,6 +25,7 @@ public class Prismatic extends Mod{
           new PrismLiquids().load();
           new PrismBullets().load();
           new PrismBlocks().load();
+          
 
       }
 

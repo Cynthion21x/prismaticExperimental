@@ -46,7 +46,7 @@ public class ShockwaveBulletType extends BulletType {
       region = atlas.find(sprite);
   }
 
-  public void bulletEnlarger(float growx){
+  public void bulletEnlarger(float growx, Bullet b){
     float xscale = (1f - growx + b.fslope() * (growx)), yscale = (1f + growx + b.fslope() * (growx)), rot = b.rotation();
     Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
     Draw.rect(region, b.x, b.y, region.width * xscale, region.height / 4f * 2, -90f + b.rotation());
@@ -65,7 +65,7 @@ public class ShockwaveBulletType extends BulletType {
       super.draw(b);
       float growx = 0f;
       for(int i = 0; i < 40; i++){
-        bulletEnlarger(growx);
+        bulletEnlarger(growx, b);
         growx += 1f;
     }
   }

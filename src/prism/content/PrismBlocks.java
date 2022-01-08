@@ -117,7 +117,7 @@ public class PrismBlocks implements ContentList{
               ammoMultiplier = 4f;
               reloadMultiplier = 2.5f;
 
-        }};
+        }}
 
       );
 

@@ -19,7 +19,7 @@ public class ShockwaveBulletType extends BulletType {
   public String sprite = "prism-soundwave";
   public TextureRegion region;
 
-  public SoundwaveBulletType(float speed, float damage, StatusEffect status){
+  public ShockwaveBulletType(float speed, float damage, StatusEffect status){
 
     this.speed = speed;
     this.damage = damage;

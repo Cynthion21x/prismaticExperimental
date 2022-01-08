@@ -47,10 +47,17 @@ public class ShockwaveBulletType extends BulletType {
   }
 
   @Override
+  public void update(Bullet b){
+
+  }
+
+  @Override
   public void draw(Bullet b){
       super.draw(b);
-      float f = b.fout(0.9f);
-      float s = Time.time / 3f;
+
+      float growx = 1
+
+      float xscale = (1f + growx + b.fslope() / (growx)), yscale = (1f + growx + b.fslope() / (growx)), rot = b.rotation();
 
       Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
 

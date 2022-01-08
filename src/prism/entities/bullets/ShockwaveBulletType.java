@@ -50,7 +50,7 @@ public class ShockwaveBulletType extends BulletType {
   public void draw(Bullet b){
       super.draw(b);
       float f = b.fout(0.9f);
-      float s = Mathf.sin(Time.time / 3f);
+      float s = Time.time / 3f;
 
       Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
 

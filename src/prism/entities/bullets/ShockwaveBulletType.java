@@ -49,7 +49,9 @@ public class ShockwaveBulletType extends BulletType {
       super.draw(b);
       float f = b.fout(0.9f);
       float s = Mathf.sin(Time.time / 3f);
+
       Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
+
       Draw.rect(region, b.x, b.y, region.width, region.height / 4f, -90f + b.rotation());
       Draw.reset();
   }

@@ -114,7 +114,7 @@ public class PrismBlocks implements ContentList{
               fromColor = toColor = Color.valueOf("ff33cc");
               lifetime = 40f;
               ammoMultiplier = 1.5f;
-              reloadMultiplier = 1.5f;
+              reloadMultiplier = 0.5f;
         }}
       );
 

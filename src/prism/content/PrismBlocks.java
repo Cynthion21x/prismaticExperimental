@@ -31,7 +31,7 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.*;
 
-import prism.entities.bullet.*;
+import prism.entities.bullets.*;
 
 public class PrismBlocks implements ContentList{
 

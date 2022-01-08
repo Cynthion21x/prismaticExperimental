@@ -54,13 +54,13 @@ public class ShockwaveBulletType extends BulletType {
   @Override
   public void draw(Bullet b){
       super.draw(b);
-
-      float growx = 0.5f;
-
-      float xscale = (1f - growx + b.fslope() * (growx)), yscale = (1f + growx + b.fslope() * (growx)), rot = b.rotation();
-      Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
-      Draw.rect(region, b.x, b.y, region.width * xscale * 2, region.height / 4f * 2, -90f + b.rotation());
-      Draw.reset();
+      float xscale = 0f;
+      for(int i = 0; i < 40; i++){
+        Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
+        Draw.rect(region, b.x, b.y, region.width * , region.height / 4f * 2, -90f + b.rotation());
+        Draw.reset();
+        xscale += 0.1f;
+    }
   }
 
 }

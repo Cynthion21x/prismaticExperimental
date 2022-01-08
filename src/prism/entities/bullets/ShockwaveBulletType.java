@@ -36,6 +36,8 @@ public class ShockwaveBulletType extends BulletType {
     lightColor = hitColor;
     buildingDamageMultiplier = 0f;
 
+    shootEffect = smokeEffect = despawnEffect = Fx.none;
+
   }
 
   @Override

@@ -124,7 +124,7 @@ public class PrismBlocks implements ContentList{
       liquidCapacity = 30f;
       health = 1125;
 
-      reloadTime = 1f;
+      reloadTime = 5f;
 
       extinguish = false;
 

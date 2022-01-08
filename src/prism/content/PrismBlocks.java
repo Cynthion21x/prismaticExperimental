@@ -112,7 +112,7 @@ public class PrismBlocks implements ContentList{
       ammo (
         PrismLiquids.dwave, new ShockwaveBulletType(4.5f, 10f, PrismStatusEffects.crippled) {{
               fromColor = toColor = Color.valueOf("ff33cc");
-              lifetime = 60f;
+              lifetime = 70f;
               ammoMultiplier = 1.5f;
               reloadMultiplier = 0.5f;
         }}
@@ -124,21 +124,14 @@ public class PrismBlocks implements ContentList{
       liquidCapacity = 30f;
       health = 1125;
 
-      reloadTime = 10f;
+      reloadTime = 2.5f;
 
       extinguish = false;
 
-      range = 250f;
+      range = 350f;
 
     }};
 
-    /*vibrocannon = new LiquidTurret("vibrocannon"){{
-      requirements(Category.turret, with(Items.lead, 150, Items.titanium, 50, Items.thorium, 20, Items.graphite, 60, Items.silicon, 120, PrismItems.diron, 20));
-
-
-
-    }};
-    */
   }
 
 

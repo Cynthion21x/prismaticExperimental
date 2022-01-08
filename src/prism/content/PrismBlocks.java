@@ -130,6 +130,8 @@ public class PrismBlocks implements ContentList{
 
       range = 350f;
 
+      
+
     }};
 
   }

@@ -55,7 +55,7 @@ public class ShockwaveBulletType extends BulletType {
   public void draw(Bullet b){
       super.draw(b);
 
-      float growx = 1.5;
+      float growx = 1.5f;
 
       float xscale = (1f + growx + b.fslope() * (growx)), yscale = (1f + growx + b.fslope() * (growx)), rot = b.rotation();
 

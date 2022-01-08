@@ -57,7 +57,7 @@ public class ShockwaveBulletType extends BulletType {
       float xscale = 0f;
       for(int i = 0; i < 40; i++){
         Draw.color(fromColor, toColor, Mathf.absin(7f, 1f));
-        Draw.rect(region, b.x, b.y, region.width * , region.height / 4f * 2, -90f + b.rotation());
+        Draw.rect(region, b.x, b.y, region.width * xscale, region.height / 4f * 2, -90f + b.rotation());
         Draw.reset();
         xscale += 0.1f;
     }

@@ -32,6 +32,7 @@ import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.*;
 
 import prism.entities.bullets.*;
+import prism.content.PrismStatusEffecs.*;
 
 public class PrismBlocks implements ContentList{
 
@@ -121,7 +122,7 @@ public class PrismBlocks implements ContentList{
 
       recoilAmount = 0f;
       liquidCapacity = 10f;
-      health = 1125f;
+      health = 1125;
 
       range = 65f;
 

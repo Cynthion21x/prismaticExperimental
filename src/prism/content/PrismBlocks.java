@@ -126,7 +126,7 @@ public class PrismBlocks implements ContentList{
 
       extinguish = false;
 
-      range = 300f;
+      range = 500f;
 
     }};
 

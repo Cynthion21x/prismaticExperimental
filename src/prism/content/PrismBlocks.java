@@ -32,7 +32,7 @@ import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.*;
 
 import prism.entities.bullets.*;
-import prism.content.PrismStatusEffecs.*;
+import prism.content.*;
 
 public class PrismBlocks implements ContentList{
 

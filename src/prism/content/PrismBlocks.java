@@ -112,7 +112,7 @@ public class PrismBlocks implements ContentList{
       ammo (
         PrismLiquids.dwave, new ShockwaveBulletType(4.5f, 10f, PrismStatusEffects.crippled) {{
               fromColor = toColor = Color.valueOf("ff33cc");
-              lifetime = 40f;
+              lifetime = 60f;
               ammoMultiplier = 1.5f;
               reloadMultiplier = 0.5f;
         }}
@@ -128,7 +128,7 @@ public class PrismBlocks implements ContentList{
 
       extinguish = false;
 
-      range = 150f;
+      range = 2500f;
 
     }};
 

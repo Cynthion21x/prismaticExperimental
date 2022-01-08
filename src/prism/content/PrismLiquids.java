@@ -10,16 +10,16 @@ public class PrismLiquids implements ContentList{
 	   @Override
     public void load(){
     	dwave = new Liquid("dwave", Color.valueOf("ff33cc")){{
-				temperature = 1.3f;
-				viscosity = 0.6f;
-				heatCapacity = 0.2f;
+				temperature = 0.4f;
+				viscosity = 0.2f;
+				heatCapacity = 0.5f;
 				explosiveness = 2.5f;
-				flammability = 0.7f;
+				flammability = 0.9f;
 
       }};
 			impuredwave = new Liquid("impuredwave", Color.valueOf("385947")){{
         temperature = 1f;
-        viscosity = 0.4f;
+        viscosity = 0.8f;
         heatCapacity = 1.4f;
 
 

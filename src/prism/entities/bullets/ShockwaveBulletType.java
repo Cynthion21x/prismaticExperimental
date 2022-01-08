@@ -13,7 +13,7 @@ import mindustry.type.*;
 
 import static arc.Core.atlas;
 
-public class shockwave extends BulletType {
+public class ShockwaveBulletType extends BulletType {
 
   public Color fromColor = Pal.accent, toColor = Pal.remove;
   public String sprite = "prism-soundwave";

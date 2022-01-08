@@ -109,29 +109,21 @@ public class PrismBlocks implements ContentList{
       requirements(Category.turret, with(Items.lead, 150, Items.titanium, 50, Items.thorium, 20, Items.graphite, 60, Items.silicon, 120, PrismItems.diron, 20));
 
       ammo (
-
         PrismLiquids.dwave, new ShockwaveBulletType(10f, 60f, PrismStatusEffecs.crippled) {{
-
-              fromColor = toColor = hitColor = Color.valueOf("ff33cc");
+              fromColor = toColor = Color.valueOf("ff33cc");
               lifetime = 60f;
               ammoMultiplier = 4f;
               reloadMultiplier = 2.5f;
-
         }}
-
       );
 
-      reloadTime = 5f;
+      size = 4;
 
-      size = 4f;
-
-      extinguish = false;
       recoilAmount = 0f;
-
-      liquidCapacity = 40f;
+      liquidCapacity = 10f;
+      health = 1125f;
 
       range = 65f;
-      health = 1200;
 
     }};
 

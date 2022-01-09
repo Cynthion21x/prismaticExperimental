@@ -83,51 +83,6 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = false;
 
-      weapons.add(new Weapon("seigeengine-weapon"){{
-
-        shootSound = Sounds.laserblast;
-        chargeSound = Sounds.lasercharge;
-
-        top = false;
-        mirror = false;
-
-        x = y = 0;
-        reload = 600f;
-        recoil = 0f;
-
-        cooldownTime = 350f;
-
-        shootStatusDuration = 60f * 2f;
-        shootStatus = StatusEffects.unmoving;
-
-        bullet = new LaserBulletType(){{
-          length = 460f;
-          damage = 560f;
-          width = 75f;
-
-          lifetime = 65f;
-
-          lightningSpacing = 35f;
-          lightningLength = 5;
-          lightningDelay = 1.1f;
-          lightningLengthRand = 15;
-          lightningDamage = 50;
-          lightningAngleRand = 40f;
-          largeHit = true;
-          lightColor = lightningColor = Pal.heal;
-
-          shootEffect = Fx.greenLaserCharge;
-
-          healPercent = 25f;
-          collidesTeam = true;
-
-          sideAngle = 15f;
-          sideWidth = 0f;
-          sideLength = 0f;
-          colors = new Color[]{Pal.heal.cpy().a(0.4f), Pal.heal, Color.white};
-        }};
-      }});
-
     }};
 
   }

@@ -45,6 +45,8 @@ public class PrismBlocks implements ContentList{
    vibrocannon;
 
    //Unit Factorys
+   public static Block
+    seigefactory;
 
   @Override
   public void load(){

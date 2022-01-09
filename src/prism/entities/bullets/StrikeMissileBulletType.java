@@ -12,7 +12,6 @@ import mindustry.graphics.*;
 import mindustry.type.*;
 
 import static arc.Core.atlas;
-import prism.content.*;
 
 public class StrikeMissileBulletType extends BulletType {
 

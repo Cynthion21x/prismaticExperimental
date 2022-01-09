@@ -16,11 +16,14 @@ import mindustry.type.*;
 import mindustry.type.ammo.*;
 import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
+import mindustry.content.*;
 
 import static arc.graphics.g2d.Draw.*;
 import static arc.graphics.g2d.Lines.*;
 import static arc.math.Angles.*;
 import static mindustry.Vars.*;
+
+import prism.entities.bullets.*;
 
 
 public class PrismUnitTypes implements ContentList{
@@ -57,6 +60,24 @@ public class PrismUnitTypes implements ContentList{
       speed = 0.3f;
 
       drawShields = false;
+
+      weapons.add(new Weapon("smissileSalvo"){{
+        reload = 40f;
+
+        rotate = true;
+        inaccuracy = 5f;
+
+        x = 7f;
+
+        shootSound = Sounds.missile;
+
+        bullet = new StrikeMissileBulletType(14f, 140f, PrismStatusEffects.crippled){{
+
+          buildingDamageMultiplier = 1.5f;
+
+        }};
+
+      }};
 
     }};
 

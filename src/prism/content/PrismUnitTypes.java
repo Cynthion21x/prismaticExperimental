@@ -26,7 +26,7 @@ import static mindustry.Vars.*;
 public class PrismUnitTypes implements ContentList{
 
   // Legs
-  public static @EntityDef({Unitc.class, Legsc.class}) UnitType
+  public static @EntityDef(value = {Unitc.class, Legsc.class}, legacy = true) UnitType
    seigeengine;
 
   @Override

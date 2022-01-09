@@ -27,7 +27,7 @@ public class StrikeMissileBulletType extends BulletType {
 
       absorbable = true;
       hittable = true;
-      collidesTiles = false;
+      collidesTiles = true;
       lifetime = 70f;
       hitSize = 15f;
       lightRadius = 5f;
@@ -49,7 +49,7 @@ public class StrikeMissileBulletType extends BulletType {
     public void draw(Bullet b){
         super.draw(b);
 
-        Draw.rect(region, b.x, b.y, region.width, region.height, -90f + b.rotation());
+        Draw.rect(region, b.x, b.y, region.width / 4, region.height / 4, -90f + b.rotation());
         Draw.reset();
     }
 

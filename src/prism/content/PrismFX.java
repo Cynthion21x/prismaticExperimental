@@ -1,4 +1,4 @@
-package Prism.content;
+package prism.content;
 
 import arc.*;
 import arc.graphics.*;

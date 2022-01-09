@@ -137,7 +137,7 @@ public class PrismBlocks implements ContentList{
     }};
 
     // Drone factorys
-    seigeConstructor = new UnitFactory("siegefactory"){{
+    siegefactory = new UnitFactory("siegefactory"){{
 
       requirements(Category.units, with(Items.copper, 250, Items.lead, 6790, Items.silicon, 4620, Items.thorium, 2400, Items.plastanium, 1500, Items.phaseFabric, 1200, PrismItems.diron, 1200));
 

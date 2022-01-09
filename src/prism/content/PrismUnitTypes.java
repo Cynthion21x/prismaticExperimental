@@ -49,9 +49,8 @@ import static mindustry.Vars.*;
 
 public class PrismUnitTypes implements ContentList{
 
-  // Legs
-  public static UnitType
-   seigeengine;
+  // Units
+  public static UnitType seigeengine;
 
    @Override
    public void load(){

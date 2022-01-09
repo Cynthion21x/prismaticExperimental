@@ -50,13 +50,13 @@ import static mindustry.Vars.*;
 public class PrismUnitTypes implements ContentList{
 
   // Units
-  public static UnitType seigeengine;
+  public static @EntityDef(value = {Unitc.class, Legsc.class}, legacy = true) UnitType seigeengine;
 
    @Override
    public void load(){
 
     seigeengine = new UnitType("seigeengine"){{
-
+      constructor = LegsUnit::create;
       hitSize = 42f;
       health = 20000f;
       armor = 4f;

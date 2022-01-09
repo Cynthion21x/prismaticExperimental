@@ -10,7 +10,7 @@ import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
-
+import prism.content.entities.bullets.*;
 import static arc.Core.atlas;
 
 public class StrikeMissileBulletType extends BulletType {

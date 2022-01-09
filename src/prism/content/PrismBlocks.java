@@ -144,7 +144,7 @@ public class PrismBlocks implements ContentList{
       size = 9;
 
       plans = Seq.with(
-        new UnitPlan(UnitTypes.dagger, 60f * 15, with(Items.silicon, 10, Items.lead, 10)),
+        new UnitPlan(UnitTypes.dagger, 60f * 15, with(Items.silicon, 10, Items.lead, 10))
       );
 
       consumes.power(20f);

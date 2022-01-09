@@ -18,7 +18,7 @@ import static mindustry.Vars.*;
 public class PrismUnitTypes implements ContentList{
 
   // Units
-  public static @EntityDef(value = {Unitc.class, Legsc.class}, legacy = true) UnitType seigeengine;
+  public static UnitType seigeengine;
 
    @Override
    public void load(){

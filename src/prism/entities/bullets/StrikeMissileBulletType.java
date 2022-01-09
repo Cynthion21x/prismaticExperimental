@@ -34,6 +34,9 @@ public class StrikeMissileBulletType extends BulletType {
 
       lightColor = hitColor;
 
+ 
+ ​     hitEffect ​=​ ​PrismFX​.​missileStrike;
+
       shootEffect = smokeEffect = PrismFX.none;
       despawnEffect = PrismFX.missileStrike;
 

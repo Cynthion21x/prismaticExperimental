@@ -52,7 +52,7 @@ public class StrikeMissileBulletType extends BulletType {
     public void draw(Bullet b){
         super.draw(b);
 
-        Draw.rect(region, b.x, b.y, region.width / 4, region.height / 4, -90f + b.rotation());
+        Draw.rect(region, b.x, b.y, region.width / 6, region.height / 6, -90f + b.rotation());
         Draw.reset();
     }
 

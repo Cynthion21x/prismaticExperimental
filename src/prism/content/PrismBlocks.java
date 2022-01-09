@@ -33,6 +33,7 @@ import static mindustry.type.ItemStack.*;
 
 import prism.entities.bullets.*;
 import prism.content.*;
+import prism.content.PrismUnitTypes.*;
 
 public class PrismBlocks implements ContentList{
 

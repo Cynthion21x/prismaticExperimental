@@ -64,7 +64,6 @@ public class PrismUnitTypes implements ContentList{
 
       landShake = 1.5f;
       rotateSpeed = 1.5f;
-      drownTimeMultiplier = 10f;
 
       commandLimit = 0;
 

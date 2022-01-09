@@ -61,7 +61,7 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = false;
 
-      weapons.add(new Weapon("smissileSalvo"){{
+      weapons.add(new Weapon("seigeenginemissileSalvo"){{
         reload = 40f;
 
         rotate = true;
@@ -71,7 +71,7 @@ public class PrismUnitTypes implements ContentList{
 
         shootSound = Sounds.missile;
 
-        bullet = new StrikeMissileBulletType(14f, 140f, PrismStatusEffects.crippled){{
+        bullet = new StrikeMissileBulletType(4f, 140f, PrismStatusEffects.crippled){{
 
           buildingDamageMultiplier = 1.5f;
 

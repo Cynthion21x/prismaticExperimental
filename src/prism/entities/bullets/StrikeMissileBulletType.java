@@ -4,6 +4,7 @@ import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.util.*;
+import prism.content.PrismFX.*;
 import prism.content.*;
 import mindustry.content.*;
 import mindustry.entities.bullet.*;

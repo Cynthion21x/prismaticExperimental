@@ -44,6 +44,8 @@ public class PrismBlocks implements ContentList{
   public static Block
    vibrocannon;
 
+   //Unit Factorys
+
   @Override
   public void load(){
 
@@ -130,9 +132,26 @@ public class PrismBlocks implements ContentList{
 
       range = 350f;
 
-      
+
 
     }};
+
+    // Drone factorys
+    seigeConstructor = new UnitFactory("siegefactory"){{
+
+      requirements(Category.units, with(Items.copper, 250, Items.lead, 6790, Items.silicon, 4620, Items.thorium, 2400, Items.plastanium, 1500, Items.phaseFabric, 1200, PrismItems.diron, 1200));
+
+      size = 9;
+
+      plans = Seq.with(
+        new UnitPlan(UnitTypes.dagger, 60f * 15, with(Items.silicon, 10, Items.lead, 10)),
+      );
+
+      consumes.power(20f);
+      consumes.liquid(PrismLiquids.dwave, 3f);
+
+    }};
+
 
   }
 

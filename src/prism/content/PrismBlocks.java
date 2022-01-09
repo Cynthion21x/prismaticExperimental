@@ -139,14 +139,14 @@ public class PrismBlocks implements ContentList{
     }};
 
     // Drone factorys
-    siegefactory = new UnitFactory("siegefactory"){{
+    seigefactory = new UnitFactory("seigefactory"){{
 
       requirements(Category.units, with(Items.copper, 250, Items.lead, 6790, Items.silicon, 4620, Items.thorium, 2400, Items.plastanium, 1500, Items.phaseFabric, 1200, PrismItems.diron, 1200));
 
       size = 9;
 
       plans = Seq.with(
-        new UnitPlan(UnitTypes.dagger, 60f * 15, with(Items.silicon, 10, Items.lead, 10))
+        new UnitPlan(PrismUnitTypes.seigeengine, 60f * 15, with(Items.silicon, 10, Items.lead, 10))
       );
 
       consumes.power(20f);

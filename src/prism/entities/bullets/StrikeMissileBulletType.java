@@ -6,6 +6,7 @@ import arc.math.*;
 import arc.util.*;
 import prism.content.*;
 import mindustry.content.*;
+import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;

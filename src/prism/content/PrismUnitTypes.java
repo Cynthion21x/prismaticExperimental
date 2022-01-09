@@ -69,7 +69,7 @@ public class PrismUnitTypes implements ContentList{
         mirror = false;
 
         x = y = 0;
-        reload: 600f;
+        reload = 600f;
         recoil = 0f;
 
         cooldownTime = 350f;

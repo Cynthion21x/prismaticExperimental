@@ -3,7 +3,6 @@ package prism.content;
 import arc.graphics.*;
 import arc.struct.*;
 import mindustry.ai.types.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.ctype.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;

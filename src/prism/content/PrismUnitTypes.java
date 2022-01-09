@@ -5,7 +5,6 @@ import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.struct.*;
 import mindustry.ai.types.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.ctype.*;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
@@ -26,7 +25,7 @@ import static mindustry.Vars.*;
 public class PrismUnitTypes implements ContentList{
 
   // Legs
-  public static @EntityDef(value = {Unitc.class, Legsc.class}, legacy = true) UnitType
+  public static UnitType
    seigeengine;
 
   @Override

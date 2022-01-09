@@ -1,32 +1,33 @@
 package prism.content;
 
 import arc.graphics.*;
+import arc.graphics.g2d.*;
+import arc.math.*;
 import arc.struct.*;
 import mindustry.ai.types.*;
+import mindustry.annotations.Annotations.*;
 import mindustry.ctype.*;
+import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
+import mindustry.entities.effect.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
+import mindustry.type.ammo.*;
+import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
-import mindustry.content.*;
-import mindustry.graphics.Drawf;
-import mindustry.graphics.Layer;
-import mindustry.graphics.MultiPacker;
-import mindustry.graphics.Pal;
-import mindustry.type.UnitType;
-import mindustry.type.Weapon;
-import mindustry.type.ammo.ItemAmmoType;
-import mindustry.type.ammo.PowerAmmoType;
-import mindustry.type.weapons.PointDefenseWeapon;
-import mindustry.type.weapons.RepairBeamWeapon;
+
+import static arc.graphics.g2d.Draw.*;
+import static arc.graphics.g2d.Lines.*;
+import static arc.math.Angles.*;
 import static mindustry.Vars.*;
+
 
 public class PrismUnitTypes implements ContentList{
 
   // Units
-  public static UnitType seigeengine;
+  public static @EntityDef(value = {Unitc.class, Legsc.class}, legacy = true) UnitType seigeengine;
 
    @Override
    public void load(){

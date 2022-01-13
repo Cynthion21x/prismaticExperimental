@@ -22,7 +22,7 @@ import static mindustry.Vars.*;
 
 public class PrismFX{
 
-  public static final Effect missileStrike;
+  public static final Effect
 
 
   missileStrike = new Effect(40f, 100f, e -> {

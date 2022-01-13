@@ -22,9 +22,9 @@ import static mindustry.Vars.*;
 
 public class PrismFX{
 
-  public static final Effect
+  public static final Effect missileStrike
 
-  none = new Effect(0, 0f, e -> {});
+
 
   missileStrike = new Effect(40f, 100f, e -> {
       color(Color.valueOf("#FF33CC"));

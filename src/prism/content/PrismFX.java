@@ -24,7 +24,7 @@ public class PrismFX{
 
   public static final Effect
 
-  none = new Effect(0, 0f, e -> {}),
+  none = new Effect(0, 0f, e -> {});
 
   missileStrike = new Effect(40f, 100f, e -> {
       color(Color.valueOf("#FF33CC"));

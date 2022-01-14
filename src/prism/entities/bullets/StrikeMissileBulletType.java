@@ -26,7 +26,7 @@ public class StrikeMissileBulletType extends BulletType {
       pierce = pierceBuilding = true;
       absorbable = hittable = collidesTiles = reflectable = true;
 
-      homingRange = 50f;
+      homingRange = 80f;
       homingDelay = 80f;
       homingPower = 100f;
 

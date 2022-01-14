@@ -54,6 +54,14 @@ public class PrismUnitTypes implements ContentList{
       hovering = true;
       visualElevation = 0.2f;
 
+      mechStepParticles = true;
+
+      drownTimeMultiplier = 11f;
+
+      strafePenalty = 0.4f;
+
+      forceMultiTarget = true;
+
       ammoType = new PowerAmmoType(8000);
 
       groundLayer = Layer.legUnit;
@@ -64,6 +72,7 @@ public class PrismUnitTypes implements ContentList{
 
       weapons.add(new Weapon("SalvoCannon"){{
         name = "Salvo";
+
 
         controllable = false;
         autoTarget = true;

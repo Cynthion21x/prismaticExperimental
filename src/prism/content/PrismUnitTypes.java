@@ -28,7 +28,6 @@ import prism.entities.bullets.*;
 
 public class PrismUnitTypes implements ContentList{
 
-  //public static Weapon seigeenginemissileSalvo;
   // Units
   public static UnitType seigeengine;
 
@@ -56,8 +55,6 @@ public class PrismUnitTypes implements ContentList{
 
       mechStepParticles = true;
 
-      //drownTimeMultiplier = 11f;
-
       strafePenalty = 0.4f;
 
       forceMultiTarget = true;
@@ -71,7 +68,7 @@ public class PrismUnitTypes implements ContentList{
       drawShields = true;
 
       weapons.add(new Weapon("SalvoCannon-mount"){{
-        name = "Salvo";
+        //name = "Salvo";
 
         controllable = false;
         autoTarget = true;
@@ -99,7 +96,6 @@ public class PrismUnitTypes implements ContentList{
         }};
 
       }});
-      //weapons.add(seigeenginemissileSalvo);
     }};
 
   }

@@ -24,8 +24,6 @@ import static arc.math.Angles.*;
 import static mindustry.Vars.*;
 
 import prism.entities.bullets.*;
-import prism.entities;
-
 
 public class PrismUnitTypes implements ContentList{
 
@@ -71,7 +69,7 @@ public class PrismUnitTypes implements ContentList{
       weapons.add(new Weapon("SalvoCannon"){{
         //name = "Salvo";
 
-        region = Core.atlas.find("SalvoCannon");
+        region = atlas.find("SalvoCannon");
 
         controllable = false;
         autoTarget = true;

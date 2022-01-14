@@ -56,7 +56,7 @@ public class PrismUnitTypes implements ContentList{
 
       mechStepParticles = true;
 
-      drownTimeMultiplier = 11f;
+      //drownTimeMultiplier = 11f;
 
       strafePenalty = 0.4f;
 
@@ -68,7 +68,7 @@ public class PrismUnitTypes implements ContentList{
 
       speed = 0.3f;
 
-      drawShields = false;
+      drawShields = true;
 
       weapons.add(new Weapon("SalvoCannon"){{
         name = "Salvo";

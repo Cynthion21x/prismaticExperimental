@@ -62,7 +62,7 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = false;
 
-        seigeenginemissileSalvo = new Weapon("seigeenginemissileSalvo"){{
+      seigeenginemissileSalvo = new Weapon("seigeenginemissileSalvo"){{
         reload = 40f;
         y = -50;
         x = 7f;
@@ -78,7 +78,7 @@ public class PrismUnitTypes implements ContentList{
 
         }};
 
-      }});
+      }};
       weapons.add(seigeenginemissileSalvo);
     }};
 

@@ -117,8 +117,8 @@ public class PrismUnitTypes implements ContentList{
           mirror = false;
 
           reload = 70f;
-          y = 0f;
-          x = -7f;
+          y = -7f;
+          x = -9f;
           rotateSpeed = 25f;
           rotate = true;
 

@@ -25,6 +25,8 @@ import static mindustry.Vars.*;
 
 import prism.entities.bullets.*;
 
+import static arc.Core.atlas;
+
 public class PrismUnitTypes implements ContentList{
 
   // Units

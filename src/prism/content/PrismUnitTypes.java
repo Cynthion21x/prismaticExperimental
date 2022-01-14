@@ -91,7 +91,7 @@ public class PrismUnitTypes implements ContentList{
 
         bullet = new StrikeMissileBulletType(4f, 230f, PrismStatusEffects.crippled){{
 
-          buildingDamageMultiplier = 1.5f;
+          buildingDamageMultiplier = 2.5f;
 
         }};
 

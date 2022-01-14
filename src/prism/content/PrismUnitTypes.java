@@ -62,15 +62,24 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = false;
 
-      weapons.add(new Weapon("seigeenginemissileSalvo"){{
-        reload = 40f;
-        y = -50;
+      weapons.add(new Weapon("SalvoCannon"){{
+        name = Salvo;
+
+        controllable = false;
+        autoTarget = true;
+        predictTarget = true;
+
+        shots = 3f;
+
+        reload = 70f;
+        y = 0f;
         x = 7f;
         rotateSpeed = 25f;
         rotate = true;
+
         inaccuracy = 5f;
 
-        top = false;
+        mirror = true;
 
         shootSound = Sounds.missile;
 

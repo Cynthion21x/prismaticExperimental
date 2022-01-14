@@ -23,36 +23,50 @@ public class StrikeMissileBulletType extends BulletType {
       this.damage = damage;
       this.status = status;
 
-      pierce = pierceBuilding = false;
+      pierce = pierceBuilding = true;
+      absorbable = hittable = collidesTiles = reflectable = true;
 
-      absorbable = true;
-      hittable = true;
-      collidesTiles = true;
+      homingRange = 50f;
+      homingDelay = 20f;
+      homingPower = 100f;
+
+      hitShake = 0.5f;
+
       lifetime = 70f;
       hitSize = 15f;
       lightRadius = 5f;
 
-      lightColor = hitColor;
+      drawSize = 1f;
+
+      splashDamage = damage * 0.25f;
+      splashDamageRadius = 5f;
+
+      scaleVelocity = true;
+
+      lightColor = hitColor = trailColor = status.color;
 
       shootEffect = smokeEffect = Fx.none;
       despawnEffect = PrismFX.missileStrike;
+
+      trailEffect = Fx.missileTrail;
+      trailLength = 2;
 
       hitEffect = PrismFX.missileStrike;
 
     }
 
-    @Override
+   @Override
     public void load(){
         super.load();
         region = atlas.find(sprite);
     }
 
-    @Override
+    /* @Override
     public void draw(Bullet b){
         super.draw(b);
 
         Draw.rect(region, b.x, b.y, region.width / 6, region.height / 6, -90f + b.rotation());
         Draw.reset();
-    }
+    } */
 
 }

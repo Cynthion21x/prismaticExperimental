@@ -63,13 +63,13 @@ public class PrismUnitTypes implements ContentList{
       drawShields = false;
 
       weapons.add(new Weapon("SalvoCannon"){{
-        name = Salvo;
+        name = "Salvo";
 
         controllable = false;
         autoTarget = true;
         predictTarget = true;
 
-        shots = 3f;
+        shots = 3;
 
         reload = 70f;
         y = 0f;

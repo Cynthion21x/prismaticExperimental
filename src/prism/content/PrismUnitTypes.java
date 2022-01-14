@@ -56,7 +56,7 @@ public class PrismUnitTypes implements ContentList{
 
       mechStepParticles = true;
 
-      strafePenalty = 0.4f;
+      strafePenalty = 0.15f;
 
       forceMultiTarget = true;
 
@@ -75,20 +75,18 @@ public class PrismUnitTypes implements ContentList{
 
           controllable = false;
           autoTarget = true;
-          predictTarget = true;
+          //predictTarget = true;
 
           shots = 3;
           shotDelay = 5f;
 
-          mirror = false;
-
           reload = 70f;
-          y = -7f;
+          y = -10f;
           x = -9f;
           rotateSpeed = 25f;
           rotate = true;
 
-          inaccuracy = 5f;
+          inaccuracy = 13f;
 
           mirror = true;
 
@@ -96,7 +94,7 @@ public class PrismUnitTypes implements ContentList{
 
           bullet = new StrikeMissileBulletType(4f, 230f, PrismStatusEffects.crippled){{
 
-            buildingDamageMultiplier = 2.5f;
+            buildingDamageMultiplier = 1.5f;
 
           }};
 

@@ -28,7 +28,7 @@ import prism.entities.bullets.*;
 
 public class PrismUnitTypes implements ContentList{
 
-  public static PrismWeapon seigeenginemissileSalvo;
+  public static Weapon seigeenginemissileSalvo;
   // Units
   public static UnitType seigeengine;
 

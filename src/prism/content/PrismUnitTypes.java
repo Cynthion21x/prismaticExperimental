@@ -70,9 +70,8 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = true;
 
-      weapons.add(new Weapon("SalvoCannon"){{
+      weapons.add(new Weapon("SalvoCannon-mount"){{
         name = "Salvo";
-
 
         controllable = false;
         autoTarget = true;

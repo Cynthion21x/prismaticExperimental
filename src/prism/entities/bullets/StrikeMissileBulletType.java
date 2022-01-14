@@ -27,7 +27,7 @@ public class StrikeMissileBulletType extends BulletType {
       absorbable = hittable = collidesTiles = reflectable = true;
 
       homingRange = 80f;
-      homingDelay = 80f;
+      homingDelay = 40f;
       homingPower = 100f;
 
       hitShake = 0.5f;
@@ -41,7 +41,7 @@ public class StrikeMissileBulletType extends BulletType {
       splashDamage = damage * 0.25f;
       splashDamageRadius = 7f;
 
-      scaleVelocity = true;
+      //scaleVelocity = true;
 
       lightColor = hitColor = trailColor = status.color;
 

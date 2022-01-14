@@ -104,10 +104,8 @@ public class PrismUnitTypes implements ContentList{
 
         }},
 
-        new Weapon("SalvoCannon"){{
+        new Weapon("prism-SalvoCannon"){{
           //name = "Salvo";
-
-          region = atlas.find("SalvoCannon");
 
           controllable = false;
           autoTarget = true;
@@ -137,7 +135,6 @@ public class PrismUnitTypes implements ContentList{
           }};
 
         }}
-
 
       );
     }};

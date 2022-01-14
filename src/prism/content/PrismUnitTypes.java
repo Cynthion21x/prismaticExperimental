@@ -70,6 +70,8 @@ public class PrismUnitTypes implements ContentList{
         rotate = true;
         inaccuracy = 5f;
 
+        top = false;
+
         shootSound = Sounds.missile;
 
         bullet = new StrikeMissileBulletType(4f, 140f, PrismStatusEffects.crippled){{

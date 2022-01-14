@@ -39,7 +39,7 @@ public class StrikeMissileBulletType extends BulletType {
       drawSize = 6f;
 
       splashDamage = damage * 0.25f;
-      splashDamageRadius = 7f;
+      splashDamageRadius = 50f;
 
       //scaleVelocity = true;
 

@@ -36,10 +36,10 @@ public class StrikeMissileBulletType extends BulletType {
       hitSize = 15f;
       lightRadius = 5f;
 
-      drawSize = 1f;
+      drawSize = 3f;
 
       splashDamage = damage * 0.25f;
-      splashDamageRadius = 5f;
+      splashDamageRadius = 7f;
 
       scaleVelocity = true;
 
@@ -49,7 +49,7 @@ public class StrikeMissileBulletType extends BulletType {
       despawnEffect = PrismFX.missileStrike;
 
       trailEffect = Fx.missileTrail;
-      trailLength = 2;
+      trailLength = 5;
 
       hitEffect = PrismFX.missileStrike;
 

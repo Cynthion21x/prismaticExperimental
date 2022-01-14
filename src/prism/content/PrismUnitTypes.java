@@ -69,41 +69,7 @@ public class PrismUnitTypes implements ContentList{
       drawShields = true;
 
       weapons.add(
-
-        new Weapon("SalvoCannon"){{
-          //name = "Salvo";
-
-          region = atlas.find("SalvoCannon");
-
-          controllable = false;
-          autoTarget = true;
-          predictTarget = true;
-
-          shots = 3;
-          shotDelay = 5f;
-
-          mirror = false;
-
-          reload = 70f;
-          y = 0f;
-          x = 7f;
-          rotateSpeed = 25f;
-          rotate = true;
-
-          inaccuracy = 5f;
-
-          mirror = true;
-
-          shootSound = Sounds.missile;
-
-          bullet = new StrikeMissileBulletType(4f, 230f, PrismStatusEffects.crippled){{
-
-            buildingDamageMultiplier = 2.5f;
-
-          }};
-
-        }},
-
+      
         new Weapon("prism-SalvoCannon"){{
           //name = "Salvo";
 

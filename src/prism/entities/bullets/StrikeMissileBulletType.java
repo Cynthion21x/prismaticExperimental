@@ -27,7 +27,7 @@ public class StrikeMissileBulletType extends BulletType {
       absorbable = hittable = collidesTiles = reflectable = true;
 
       homingRange = 50f;
-      homingDelay = 20f;
+      homingDelay = 80f;
       homingPower = 100f;
 
       hitShake = 0.5f;

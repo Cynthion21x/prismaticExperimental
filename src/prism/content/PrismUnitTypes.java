@@ -71,7 +71,7 @@ public class PrismUnitTypes implements ContentList{
       weapons.add(new Weapon("SalvoCannon"){{
         //name = "Salvo";
 
-        region = Core.atlas.find(SalvoCannon);
+        region = Core.atlas.find("SalvoCannon");
 
         controllable = false;
         autoTarget = true;

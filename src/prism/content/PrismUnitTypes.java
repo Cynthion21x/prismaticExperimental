@@ -70,6 +70,7 @@ public class PrismUnitTypes implements ContentList{
         predictTarget = true;
 
         shots = 3;
+        shotDelay = 5f;
 
         reload = 70f;
         y = 0f;

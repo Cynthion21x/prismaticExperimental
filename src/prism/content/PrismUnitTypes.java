@@ -28,7 +28,7 @@ import prism.entities.bullets.*;
 
 public class PrismUnitTypes implements ContentList{
 
-  public static Weapon seigeenginemissileSalvo;
+  //public static Weapon seigeenginemissileSalvo;
   // Units
   public static UnitType seigeengine;
 
@@ -62,7 +62,7 @@ public class PrismUnitTypes implements ContentList{
 
       drawShields = false;
 
-      seigeenginemissileSalvo = new Weapon("seigeenginemissileSalvo"){{
+      weapons.add(new Weapon("seigeenginemissileSalvo"){{
         reload = 40f;
         y = -50;
         x = 7f;
@@ -80,8 +80,8 @@ public class PrismUnitTypes implements ContentList{
 
         }};
 
-      }};
-      weapons.add(seigeenginemissileSalvo);
+      }});
+      //weapons.add(seigeenginemissileSalvo);
     }};
 
   }

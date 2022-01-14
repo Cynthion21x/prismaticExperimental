@@ -23,7 +23,7 @@ public class StrikeMissileBulletType extends BulletType {
       this.damage = damage;
       this.status = status;
 
-      pierce = pierceBuilding = true;
+      pierce = pierceBuilding = false;
       absorbable = hittable = collidesTiles = reflectable = true;
 
       homingRange = 80f;

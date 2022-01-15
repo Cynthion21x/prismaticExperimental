@@ -110,7 +110,7 @@ public class PrismUnitTypes implements ContentList{
 
           x = y = 0;
 
-          reload = 70f;
+          reload = 20f;
 
           inaccuracy = 0f;
 

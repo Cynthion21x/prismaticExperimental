@@ -44,7 +44,7 @@ public class PrismFX{
       Drawf.light(e.x, e.y, circleRad * 1.6f, Pal.heal, e.fout());
   }),
 
-  SeigeCharge = new Effect(800f, 100f, e -> {
+  SeigeCharge = new Effect(300f, 100f, e -> {
         color(Color.valueOf("#FF33CC"));
         stroke(e.fin() * 2f);
         Lines.circle(e.x, e.y, 4f + e.fout() * 100f);

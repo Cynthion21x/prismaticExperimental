@@ -114,7 +114,7 @@ public class PrismUnitTypes implements ContentList{
 
           inaccuracy = 0f;
 
-          shootStatusDuration = 60f * 2f;
+          shootStatusDuration = PrismFX.SeigeCharge.lifetime;
           shootStatus = StatusEffects.unmoving;
 
           firstShotDelay = PrismFX.SeigeCharge.lifetime;

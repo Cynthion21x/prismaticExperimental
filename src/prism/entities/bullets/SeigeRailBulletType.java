@@ -20,6 +20,10 @@ public class SeigeRailBulletType extends LaserBulletType {
 
       pierceBuilding = pierce = hittable = reflectable = absorbable = false;
 
+     shootEffect = PrismFX.SeigeCharge;
+
+      lifetime = 9f;
+
       length = 760f;
       width = 50f;
 

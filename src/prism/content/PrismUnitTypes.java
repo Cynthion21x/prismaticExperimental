@@ -124,8 +124,9 @@ public class PrismUnitTypes implements ContentList{
 
             buildingDamageMultiplier = 2f;
 
-          }}
+          }};
 
+        }}
 
       );
     }};

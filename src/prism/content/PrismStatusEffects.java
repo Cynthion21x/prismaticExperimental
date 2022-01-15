@@ -38,7 +38,7 @@ public class PrismStatusEffects implements ContentList {
 
         init(() -> {
 
-          affinity(StatusEffect.blasted, (unit, result, time) -> {
+          affinity(StatusEffects.blasted, (unit, result, time) -> {
               unit.damagePierce(transitionDamage);
               result.set(shatter, time + result.time);
           });

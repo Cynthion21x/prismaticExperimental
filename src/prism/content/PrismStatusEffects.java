@@ -22,7 +22,7 @@ import prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
-  public static StatusEffect crippled;
+  public static StatusEffect crippled, shatter;
 
   @Override
   public void load() {
@@ -38,7 +38,7 @@ public class PrismStatusEffects implements ContentList {
 
         init(() -> {
 
-          affinity(blasted, (unit, result, time) -> {
+          affinity(StatusEffect.blasted, (unit, result, time) -> {
               unit.damagePierce(transitionDamage);
               result.set(shatter, time + result.time);
           });

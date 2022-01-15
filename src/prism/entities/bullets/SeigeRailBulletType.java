@@ -14,7 +14,7 @@ import static arc.Core.atlas;
 
 public class SeigeRailBulletType extends LaserBulletType {
 
-    public StrikeMissileBulletType(float damage, Color[] colour){
+    public SeigeRailBulletType(float damage, Color[] colour){
 
       this.damage = damage;
       this.colour = colour;

@@ -14,12 +14,9 @@ import static arc.Core.atlas;
 
 public class SeigeRailBulletType extends LaserBulletType {
 
-    public SeigeRailBulletType(float damage, Color colour){
+    public SeigeRailBulletType(float damage){
 
       this.damage = damage;
-      this.colour = colour;
-
-      colors = colour;
 
       pierceBuilding = pierce = hittable = reflectable = absorbable = false;
 

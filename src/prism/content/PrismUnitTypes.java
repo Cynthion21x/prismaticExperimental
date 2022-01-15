@@ -26,6 +26,7 @@ import static mindustry.Vars.*;
 import prism.entities.bullets.*;
 
 import static arc.Core.atlas;
+import prism.content.*;
 
 public class PrismUnitTypes implements ContentList{
 
@@ -98,7 +99,33 @@ public class PrismUnitTypes implements ContentList{
 
           }};
 
-        }}
+        }},
+
+        new Weapon("chaoscannon"){{
+
+          shootSound = Sounds.laserblast;
+
+          controllable = true;
+          autoTarget = rotate = mirror = top = false;
+
+          x = y = 0;
+
+          reload = 70f;
+
+          inaccuracy = 0f;
+
+          shootStatusDuration = 60f * 2f;
+          shootStatus = StatusEffects.unmoving;
+          parentizeEffects = true;
+
+          firstShotDelay = PrismFX.SeigeCharge.lifetime;
+
+          bullet = new SeigeRailBulletType(400f, Color.valueOf("#FF33CC")){{
+
+            buildingDamageMultiplier = 2f;
+
+          }}
+
 
       );
     }};

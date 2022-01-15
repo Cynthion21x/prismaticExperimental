@@ -120,7 +120,7 @@ public class PrismUnitTypes implements ContentList{
 
           firstShotDelay = PrismFX.SeigeCharge.lifetime;
 
-          bullet = new SeigeRailBulletType(400f, {Color.valueOf("#FF33CC"), Color.valueOf("#c40041"), Color.valueOf("#960082")}){{
+          bullet = new SeigeRailBulletType(400f, Color.valueOf("#FF33CC")){{
 
             buildingDamageMultiplier = 2f;
 

@@ -38,7 +38,7 @@ public class PrismUnitTypes implements ContentList{
     seigeengine = new UnitType("seigeengine"){{
       constructor = LegsUnit::create;
       hitSize = 42f;
-      health = 20000f;
+      health = 21000f;
       armor = 4f;
 
       landShake = 1.5f;
@@ -69,7 +69,7 @@ public class PrismUnitTypes implements ContentList{
       drawShields = true;
 
       weapons.add(
-      
+
         new Weapon("prism-SalvoCannon"){{
           //name = "Salvo";
 

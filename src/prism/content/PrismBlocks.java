@@ -147,7 +147,7 @@ public class PrismBlocks implements ContentList{
       size = 9;
 
       plans = Seq.with(
-        new UnitPlan(PrismUnitTypes.seigeengine, 60f * 300, with(Items.silicon, 10, Items.lead, 10))
+        new UnitPlan(PrismUnitTypes.seigeengine, 60f * 200, with(Items.silicon, 2000, Items.lead, 5700, Items.phaseFabric, 760, PrismItems.diron, 1500, Items.thorium, 780, Items.titanium, 1200))
       );
 
       consumes.power(20f);

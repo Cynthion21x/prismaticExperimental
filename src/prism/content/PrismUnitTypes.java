@@ -76,12 +76,12 @@ public class PrismUnitTypes implements ContentList{
 
           controllable = false;
           autoTarget = true;
-          //predictTarget = true;
+          predictTarget = true;
 
           shots = 3;
           shotDelay = 5f;
 
-          reload = 70f;
+          reload = 140f;
           y = -10f;
           x = -9f;
           rotateSpeed = 25f;
@@ -123,7 +123,7 @@ public class PrismUnitTypes implements ContentList{
 
           bullet = new SeigeRailBulletType(400f){{
 
-            buildingDamageMultiplier = 2f;
+            buildingDamageMultiplier = 4f;
 
           }};
 

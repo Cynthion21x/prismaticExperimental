@@ -110,9 +110,11 @@ public class PrismUnitTypes implements ContentList{
 
           x = y = 0;
 
-          reload = 70f;
+          reload = 50f + (PrismFX.SeigeCharge.lifetime * 60);
 
           inaccuracy = 0f;
+
+          shake = 14f;
 
           shootStatusDuration = PrismFX.SeigeCharge.lifetime;
           shootStatus = StatusEffects.unmoving;

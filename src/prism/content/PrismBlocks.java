@@ -34,12 +34,13 @@ import static mindustry.type.ItemStack.*;
 import prism.entities.bullets.*;
 import prism.content.*;
 import prism.content.PrismUnitTypes.*;
+import prism.world.*;
 
 public class PrismBlocks implements ContentList{
 
   // factorys
   public static Block
-   dcompressor, dextractor, dfilter;
+   dcompressor, dextractor, dfilter, scrapfilter;
 
   // Turrets
   public static Block
@@ -75,6 +76,28 @@ public class PrismBlocks implements ContentList{
     }};
 
 
+
+    scrapfilter = new GenericCrafter("scrapfilter"){{
+
+        health = 60;
+        size = 2;
+
+        requirements(Category.crafting, with(Items.lead, 35, Items.copper, 10));
+
+        hasPower = true;
+        hasItems = true;
+        craftTime = 90;
+        craftEffect = Fx.pulverize;
+        outputItem = new ItemStack(Items.scrap, 1);
+
+        drawer = new DrawSpin();
+
+        consumes.power(0.5f);
+        consumes.items(with(Items.sand, 4));
+
+
+        itemCapacity = 10;
+      }};
 
 
     dextractor = new SolidPump("dextractor"){{

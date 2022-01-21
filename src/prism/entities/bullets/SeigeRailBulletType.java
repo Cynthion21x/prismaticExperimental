@@ -20,19 +20,30 @@ public class SeigeRailBulletType extends LaserBulletType {
 
       pierceBuilding = pierce = hittable = reflectable = absorbable = false;
 
-     shootEffect = PrismFX.SeigeCharge;
+      shootEffect = PrismFX.SeigeCharge;
 
-      lifetime = 9f;
+      length = 460f;
+      width = 43f;
 
-      length = 760f;
-      width = 50f;
-
-      lightningDelay = 8f;
-      lightningAngleRand = 3f;
-      lightningSpacing = 8f;
-      largeHit = true;
+      lifetime = 130f;
+      lightningSpacing = 35f;
+      lightningLength = 8;
+      lightningDelay = 2.3f;
+      lightningLengthRand = 15;
 
       lightningDamage = damage * 4;
+      lightningAngleRand = 40f;
+
+      largeHit = true;
+      sideAngle = 15f;
+
+      sideWidth = 0f;
+      sideLength = 0f;
+
+      lightColor = lightningColor = Color.valueOf("#FF33CC");
+
+      //#f542e9
+      colors = new Color[]{Color.valueOf("#F542E9"), Color.valueOf("#FF33CC"), Color.white};
 
     }
 

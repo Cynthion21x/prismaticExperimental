@@ -22,7 +22,7 @@ import prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
-  public static StatusEffect crippled, shatter;
+  public static StatusEffect shatter, crippled;
 
   @Override
   public void load() {

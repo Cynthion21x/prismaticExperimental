@@ -112,6 +112,8 @@ public class PrismUnitTypes implements ContentList{
 
           reload = 270f;
 
+          shots = 6;
+
           inaccuracy = 0f;
 
           shake = 14f;

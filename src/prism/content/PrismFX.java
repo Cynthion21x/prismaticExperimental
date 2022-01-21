@@ -29,7 +29,7 @@ public class PrismFX{
       color(Color.valueOf("#FF33CC"));
       stroke(e.fout() * 2f);
       float circleRad = 4f + e.finpow() * 65f;
-      Lines.circle(e.x, e.y, circleRad);
+      //Lines.circle(e.x, e.y, circleRad);
 
       color(Color.valueOf("#FF33CC"));
       for(int i = 0; i < 4; i++){

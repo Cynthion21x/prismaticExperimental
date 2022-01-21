@@ -30,9 +30,11 @@ public class PrismStatusEffects implements ContentList {
     shatter = new StatusEffect("shatter") {{
 
         //disarm = true;
+        show = true;
 
-        reloadMultiplier = 5f;
+        reloadMultiplier = 0.2f;
         buildSpeedMultiplier = 1f;
+        damageMultiplier = 0.8f;
 
         transitionDamage = 146f;
 

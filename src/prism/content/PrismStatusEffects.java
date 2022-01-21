@@ -27,10 +27,23 @@ public class PrismStatusEffects implements ContentList {
   @Override
   public void load() {
 
+    shatter = new StatusEffect("shatter") {{
+
+        //disarm = true;
+
+        reloadMultiplier = 5f;
+        buildSpeedMultiplier = 1f;
+
+        transitionDamage = 146f;
+
+        color = Color.valueOf("#A1FFFF");
+    }};
+
+
     crippled = new StatusEffect("crippled") {{
         damage = 5f;
         speedMultiplier = 0.5f;
-        buildSpeedMultiplier = 0f;
+        buildSpeedMultiplier = 0.5f;
         healthMultiplier = 0.8f;
 
         // Color = PrismColours.hotPink;
@@ -45,19 +58,6 @@ public class PrismStatusEffects implements ContentList {
 
       });
     }};
-
-    shatter = new StatusEffect("shatter") {{
-
-        //disarm = true;
-
-        reloadMultiplier = 5f;
-
-        transitionDamage = 36f;
-
-        // Color = PrismColours.hotPink;
-        color = Color.valueOf("#a1ffff");
-      }};
-
 
   }
 }

@@ -86,7 +86,7 @@ public class PrismBlocks implements ContentList{
 
         hasPower = true;
         hasItems = true;
-        craftTime = 90;
+        craftTime = 3;
         craftEffect = Fx.pulverize;
         outputItem = new ItemStack(Items.scrap, 1);
 

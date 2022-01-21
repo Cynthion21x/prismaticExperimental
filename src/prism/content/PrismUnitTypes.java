@@ -110,7 +110,7 @@ public class PrismUnitTypes implements ContentList{
 
           x = y = 0;
 
-          reload = 50f + (PrismFX.SeigeCharge.lifetime * 60);
+          reload = (50f + (PrismFX.SeigeCharge.lifetime * 60)) / 2f;
 
           inaccuracy = 0f;
 

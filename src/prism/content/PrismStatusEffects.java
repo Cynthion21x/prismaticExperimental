@@ -51,8 +51,6 @@ public class PrismStatusEffects implements ContentList {
         // Color = PrismColours.hotPink;
         color = Color.valueOf("#FF33CC");
 
-        /*
-
         init(() -> {
 
           affinity(StatusEffects.blasted, (unit, result, time) -> {
@@ -62,7 +60,6 @@ public class PrismStatusEffects implements ContentList {
 
       });
 
-      */
     }};
 
     sink = new StatusEffect("sink") {{

@@ -93,7 +93,7 @@ public class PrismUnitTypes implements ContentList{
 
           shootSound = Sounds.missile;
 
-          bullet = new StrikeMissileBulletType(4f, 135f, PrismStatusEffects.crippled){{
+          bullet = new StrikeMissileBulletType(4f, 33.75f, PrismStatusEffects.crippled){{
 
             buildingDamageMultiplier = 1.5f;
 
@@ -124,7 +124,7 @@ public class PrismUnitTypes implements ContentList{
 
           firstShotDelay = PrismFX.SeigeCharge.lifetime;
 
-          bullet = new SeigeRailBulletType(400f){{
+          bullet = new SeigeRailBulletType(50f){{
 
             buildingDamageMultiplier = 4f;
 

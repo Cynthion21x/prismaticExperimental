@@ -29,7 +29,7 @@ public class PrismFX{
       color(Color.valueOf("#FF33CC"));
       stroke(e.fout() * 2f);
       float circleRad = 4f + e.finpow() * 65f;
-      //Lines.circle(e.x, e.y, circleRad);
+      Lines.circle(e.x, e.y, circleRad);
 
       color(Color.valueOf("#FF33CC"));
       for(int i = 0; i < 4; i++){
@@ -47,7 +47,7 @@ public class PrismFX{
   SeigeCharge = new Effect(300f, 100f, e -> {
         color(Color.valueOf("#FF33CC"));
         stroke(e.fin() * 2f);
-        Lines.circle(e.x, e.y, 4f + e.fout() * 100f);
+        //Lines.circle(e.x, e.y, 4f + e.fout() * 100f);
 
         Fill.circle(e.x, e.y, e.fin() * 20);
 

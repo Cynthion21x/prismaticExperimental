@@ -22,7 +22,7 @@ import prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
-  public static StatusEffect shatter, crippled;
+  public static StatusEffect shatter, crippled, sink;
 
   @Override
   public void load() {
@@ -59,6 +59,17 @@ public class PrismStatusEffects implements ContentList {
           });
 
       });
+    }};
+
+    sink = new StatusEffect("sink") {{
+        show = true;
+
+        reloadMultiplier = 0.5f;
+        speedMultiplier = 0.3f;
+        buildSpeedMultiplier = 0f;
+        healthMultiplier = 0.5f;
+
+        color = Color.valueOf("#120054");
     }};
 
   }

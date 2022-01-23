@@ -36,30 +36,36 @@ public class PrismStatusEffects implements ContentList {
         healthMultiplier = 0.8f;
         color = Color.valueOf("#FF33CC");
 
-      /*  init(() -> {
+        init(() -> {
 
           affinity(StatusEffects.blasted, (unit, result, time) -> {
               unit.damagePierce(transitionDamage);
               result.set(shatter, time + result.time);
           });
 
-      }); */
+      });
 
     }};
 
 
     charge = new StatusEffect("charge") {{
+        localizedName = "charge";
 
         damage = 5f;
         speedMultiplier = 0f;
         buildSpeedMultiplier = 0f;
-
         healthMultiplier = 2f;
-
         color = Color.valueOf("#BA03FC");
 
     }};
 
+
+    shatter = new StatusEffect("shatter") {{
+
+      localizedName = "shatter";
+      color = Color.valueOf("#42ECF5");
+
+    }};
 
   }
 }

@@ -51,16 +51,21 @@ public class PrismStatusEffects implements ContentList {
     charge = new StatusEffect("charge") {{
         localizedName = "charge";
 
-        damage = 5f;
+        transitionDamage = 20f;
+
         speedMultiplier = 0f;
         buildSpeedMultiplier = 0f;
         healthMultiplier = 2f;
+        
         color = Color.valueOf("#BA03FC");
 
     }};
 
 
     shatter = new StatusEffect("shatter") {{
+
+      healthMultiplier = 0.7f;
+      reloadMultiplier = 0.5f;
 
       localizedName = "shatter";
       color = Color.valueOf("#42ECF5");

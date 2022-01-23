@@ -34,8 +34,6 @@ public class PrismStatusEffects implements ContentList {
         speedMultiplier = 0.5f;
         buildSpeedMultiplier = 0.5f;
         healthMultiplier = 0.8f;
-
-        // Color = PrismColours.hotPink;
         color = Color.valueOf("#FF33CC");
 
       /*  init(() -> {
@@ -49,6 +47,18 @@ public class PrismStatusEffects implements ContentList {
 
     }};
 
+
+    charge = new StatusEffect("charge") {{
+
+        damage = 5f;
+        speedMultiplier = 0f;
+        buildSpeedMultiplier = 0f;
+
+        healthMultiplier = 2f;
+
+        color = Color.valueOf("#BA03FC");
+
+    }};
 
 
   }

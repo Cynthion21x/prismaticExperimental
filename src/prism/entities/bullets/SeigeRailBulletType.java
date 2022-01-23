@@ -31,7 +31,7 @@ public class SeigeRailBulletType extends LaserBulletType {
       lightningDelay = 2.3f;
       lightningLengthRand = 15;
 
-      lightningDamage = damage * 2f;
+      lightningDamage = damage * 3.5f;
       lightningAngleRand = 40f;
 
       largeHit = true;

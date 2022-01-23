@@ -93,7 +93,7 @@ public class PrismUnitTypes implements ContentList{
 
           shootSound = Sounds.missile;
 
-          bullet = new StrikeMissileBulletType(4f, 33.75f, PrismStatusEffects.crippled){{
+          bullet = new StrikeMissileBulletType(4f, 33.75f, StatusEffects.blasted){{
 
             buildingDamageMultiplier = 1.5f;
 

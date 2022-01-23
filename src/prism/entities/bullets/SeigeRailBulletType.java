@@ -31,7 +31,7 @@ public class SeigeRailBulletType extends LaserBulletType {
       lightningDelay = 2.3f;
       lightningLengthRand = 15;
 
-      lightningDamage = damage * 3.5f;
+      lightningDamage = damage * 2f;
       lightningAngleRand = 40f;
 
       largeHit = true;
@@ -44,6 +44,8 @@ public class SeigeRailBulletType extends LaserBulletType {
 
       //#f542e9
       colors = new Color[]{Color.valueOf("#F542E9"), Color.valueOf("#FF33CC"), Color.white};
+
+      damage = 0;
 
     }
 

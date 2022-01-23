@@ -39,7 +39,7 @@ public class PrismUnitTypes implements ContentList{
     seigeengine = new UnitType("seigeengine"){{
       constructor = LegsUnit::create;
       hitSize = 42f;
-      health = 21000f;
+      health = 14000f;
       armor = 4f;
 
       landShake = 1.5f;
@@ -123,7 +123,7 @@ public class PrismUnitTypes implements ContentList{
           shake = 14f;
 
           shootStatusDuration = PrismFX.SeigeCharge.lifetime;
-          shootStatus = StatusEffects.unmoving;
+          shootStatus = PrismStatusEffects.charge;
 
           firstShotDelay = PrismFX.SeigeCharge.lifetime;
 

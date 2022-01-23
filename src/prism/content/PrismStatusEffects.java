@@ -22,10 +22,24 @@ import prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
-  public static StatusEffect shatter, crippled, sink;
+  public static StatusEffect shatter, crippled, sink, charge;
+
+  //#ba03fc
 
   @Override
   public void load() {
+
+    charge = new StatusEffect("charge") {{
+
+        //disarm = true;
+        speedMultiplier = 0.0f;
+        healthMultiplier = 2f;
+        buildSpeedMultiplier = 0f;
+
+        transitionDamage = 90f;
+
+        color = Color.valueOf("#BA03fC");
+    }};
 
     shatter = new StatusEffect("shatter") {{
 

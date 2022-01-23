@@ -103,6 +103,7 @@ public class PrismUnitTypes implements ContentList{
 
         new Weapon("chaoscannon"){{
 
+          chargeSound = Sounds.pulse;
           shootSound = Sounds.laserblast;
 
           controllable = true;

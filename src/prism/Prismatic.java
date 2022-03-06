@@ -10,7 +10,7 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
-// Vanilla Upgraded Package
+// Prism Content Package
 import prism.content.*;
 
 public class Prismatic extends Mod{

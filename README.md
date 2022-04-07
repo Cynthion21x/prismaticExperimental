@@ -1,5 +1,5 @@
 # Prismatic Experimental
-A mindustry Java mod by ice100k and thecrisperson
+A mindustry Java mod by ice100k and thekayperson
 
 
 ***This Github Repo is for the experimental version of this mod, if you choose to download this mod please understand that it may not work***

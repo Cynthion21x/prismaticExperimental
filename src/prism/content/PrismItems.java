@@ -1,13 +1,14 @@
 package prism.content;
 
 import arc.graphics.*;
+import mindustry.ctype.*;
 import mindustry.type.*;
 
-public class PrismItems{
+public class PrismItems implements ContentList{
 	public static Item diron;
 
 	@Override
-    public static void load(){
+    public void load(){
     	diron = new Item("diron", Color.valueOf("c42b9e")){{
             cost = 2f;
             explosiveness = 1.3f;

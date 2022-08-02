@@ -8,6 +8,7 @@ import arc.util.*;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.core.*;
+import mindustry.ctype.ContentList;
 import mindustry.entities.*;
 import mindustry.entities.units.WeaponMount;
 import mindustry.gen.*;
@@ -19,14 +20,14 @@ import mindustry.world.meta.*;
 import prism.Prismatic;
 import prism.content.*;
 
-public class PrismStatusEffects{
+public class PrismStatusEffects implements ContentList {
 
   public static StatusEffect shatter, crippled, sink, charge;
 
   //#ba03fc
 
   @Override
-  public static void load() {
+  public void load() {
 
     crippled = new StatusEffect("crippled") {{
         damage = 5f;

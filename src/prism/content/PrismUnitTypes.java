@@ -5,6 +5,7 @@ import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.struct.*;
 import mindustry.ai.types.*;
+import mindustry.ctype.*;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
@@ -27,13 +28,13 @@ import prism.entities.bullets.*;
 import static arc.Core.atlas;
 import prism.content.*;
 
-public class PrismUnitTypes{
+public class PrismUnitTypes implements ContentList{
 
   // Units
   public static UnitType seigeengine;
 
    @Override
-   public static void load(){
+   public void load(){
 
     seigeengine = new UnitType("seigeengine"){{
       constructor = LegsUnit::create;

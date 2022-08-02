@@ -1,13 +1,14 @@
 package prism.content;
 
 import arc.graphics.*;
+import mindustry.ctype.*;
 import mindustry.type.*;
 
-public class PrismLiquids{
+public class PrismLiquids implements ContentList{
 	public static Liquid dwave, impuredwave;
 
 	   @Override
-    public static void load(){
+    public void load(){
     	dwave = new Liquid("dwave", Color.valueOf("ff33cc")){{
 				temperature = 0.4f;
 				viscosity = 0.2f;

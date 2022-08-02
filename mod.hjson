@@ -2,8 +2,8 @@ name: "prism"
 displayName: "Prismatic"
 author: "ice100k & thecrisperson"
 description: "Prismatic[] introduces lots of new technology capable of bending the very fabrics of reality.. \n \n - Made in Java -\n  "
-version: "1.16.206.8 -BETA"
-minGameVersion: "136"
+version: "1.16.206.7 -BETA"
+minGameVersion: "135"
 
 main: "prism.Prismatic"
 java: true

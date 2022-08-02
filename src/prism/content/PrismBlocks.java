@@ -5,7 +5,7 @@ import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.struct.*;
 import mindustry.content.*;
-import mindustry.ctype.*;
+//import mindustry.ctype.*;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
@@ -36,7 +36,7 @@ import prism.content.*;
 import prism.content.PrismUnitTypes.*;
 import prism.world.*;
 
-public class PrismBlocks implements ContentList{
+public class PrismBlocks /*implements ContentList*/{
 
   // factorys
   public static Block
@@ -51,7 +51,7 @@ public class PrismBlocks implements ContentList{
     seigefactory;
 
   @Override
-  public void load(){
+  public static void load(){
 
     // factorys
 

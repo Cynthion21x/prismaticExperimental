@@ -1,4 +1,4 @@
-package prism.content;
+package cynthion.prism.content;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
@@ -13,8 +13,15 @@ import mindustry.entities.effect.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
-import mindustry.type.ammo.*;
-import mindustry.type.weapons.*;
+import mindustry.entities.units.WeaponMount;
+//import mindustry.type.ammo.*;
+//import mindustry.type.weapons.*;
+
+import mindustry.type.Weapon;
+import mindustry.type.UnitType;
+import mindustry.type.AmmoType;
+import mindustry.type.AmmoTypes;
+
 import mindustry.world.meta.*;
 import mindustry.content.*;
 
@@ -23,10 +30,10 @@ import static arc.graphics.g2d.Lines.*;
 import static arc.math.Angles.*;
 import static mindustry.Vars.*;
 
-import prism.entities.bullets.*;
+import cynthion.prism.entities.bullets.*;
 
 import static arc.Core.atlas;
-import prism.content.*;
+import cynthion.prism.content.*;
 
 public class PrismUnitTypes implements ContentList{
 
@@ -59,9 +66,9 @@ public class PrismUnitTypes implements ContentList{
 
       strafePenalty = 0.15f;
 
-      forceMultiTarget = true;
+      //forceMultiTarget = true;
 
-      ammoType = new PowerAmmoType(8000);
+      ammoType = new AmmoTypes.PowerAmmoType(8000);
 
       groundLayer = Layer.legUnit;
 
@@ -74,9 +81,9 @@ public class PrismUnitTypes implements ContentList{
         new Weapon("prism-SalvoCannon"){{
           //name = "Salvo";
 
-          controllable = false;
-          autoTarget = true;
-          predictTarget = true;
+          //controllable = false;
+          //autoTarget = true;
+          //predictTarget = true;
 
           shots = 3;
           shotDelay = 5f;
@@ -106,8 +113,8 @@ public class PrismUnitTypes implements ContentList{
           chargeSound = Sounds.pulse;
           shootSound = Sounds.laserblast;
 
-          controllable = true;
-          autoTarget = rotate = mirror = top = false;
+          //controllable = true;
+          //autoTarget = rotate = mirror = top = false;
 
           x = y = 0;
 

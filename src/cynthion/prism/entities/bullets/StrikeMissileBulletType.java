@@ -1,10 +1,10 @@
-package prism.entities.bullets;
+package cynthion.prism.entities.bullets;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.util.*;
-import prism.content.*;
+import cynthion.prism.content.*;
 import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
@@ -49,7 +49,7 @@ public class StrikeMissileBulletType extends BulletType {
       despawnEffect = PrismFX.missileStrike;
 
       trailEffect = Fx.missileTrail;
-      trailLength = 10;
+      //trailLength = 10;
 
       hitEffect = PrismFX.missileStrike;
 

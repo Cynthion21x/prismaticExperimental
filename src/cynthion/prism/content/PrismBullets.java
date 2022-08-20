@@ -1,4 +1,4 @@
-package prism.content;
+package cynthion.prism.content;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;

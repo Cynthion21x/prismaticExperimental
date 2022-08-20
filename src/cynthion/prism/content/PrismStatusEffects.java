@@ -1,24 +1,22 @@
-package prism.content;
+package cynthion.prism.content;
 
 import arc.*;
 import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.math.*;
 import arc.util.*;
-import mindustry.*;
 import mindustry.content.*;
-import mindustry.core.*;
-import mindustry.ctype.ContentList;
-import mindustry.entities.*;
-import mindustry.entities.units.WeaponMount;
+import mindustry.entities.abilities.*;
+import mindustry.entities.units.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
-import mindustry.type.StatusEffect;
-import mindustry.ui.*;
+import mindustry.type.*;
 import mindustry.world.meta.*;
+import mindustry.ctype.*;
 
-import prism.Prismatic;
-import prism.content.*;
+import static mindustry.Vars.*;
+
+import cynthion.prism.content.*;
 
 public class PrismStatusEffects implements ContentList {
 
@@ -36,14 +34,14 @@ public class PrismStatusEffects implements ContentList {
         healthMultiplier = 0.8f;
         color = Color.valueOf("#FF33CC");
 
-        init(() -> {
+        /*init(() -> {
 
           affinity(StatusEffects.blasted, (unit, result, time) -> {
               unit.damagePierce(transitionDamage);
               result.set(shatter, time + result.time);
           });
 
-      });
+        });*/
 
     }};
 

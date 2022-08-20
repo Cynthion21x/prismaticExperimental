@@ -1,4 +1,4 @@
-package prism.content;
+package cynthion.prism.content;
 
 import arc.*;
 import arc.graphics.*;
@@ -31,10 +31,10 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import static mindustry.type.ItemStack.*;
 
-import prism.entities.bullets.*;
-import prism.content.*;
-import prism.content.PrismUnitTypes.*;
-import prism.world.*;
+import cynthion.prism.entities.bullets.*;
+import cynthion.prism.content.*;
+import cynthion.prism.content.PrismUnitTypes.*;
+import cynthion.prism.world.*;
 
 public class PrismBlocks /*implements ContentList*/{
 
@@ -50,7 +50,6 @@ public class PrismBlocks /*implements ContentList*/{
    public static Block
     seigefactory;
 
-  @Override
   public static void load(){
 
     // factorys
@@ -122,7 +121,7 @@ public class PrismBlocks /*implements ContentList*/{
       craftTime = 3;
       craftEffect = Fx.purify;
 
-      drawer = new DrawMixer(true);
+      drawer = new DrawMixer();
 
       outputLiquid = new LiquidStack(PrismLiquids.dwave, 6f);
       consumes.power(1.8f);

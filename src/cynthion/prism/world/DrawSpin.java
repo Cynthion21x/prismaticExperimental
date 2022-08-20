@@ -1,4 +1,4 @@
-package prism.world;
+package cynthion.prism.world;
 
 import arc.*;
 import arc.graphics.g2d.*;

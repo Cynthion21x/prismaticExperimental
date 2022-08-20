@@ -11,10 +11,9 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 // Prism Content Package
-import prism.content.*;
+import cynthion.prism.content.*;
 
 public class Prismatic extends Mod{
-
 
       public Prismatic(){}
 
@@ -30,7 +29,5 @@ public class Prismatic extends Mod{
 
 
       }
-
-
 
 }

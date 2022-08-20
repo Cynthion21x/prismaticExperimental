@@ -1,0 +1,11 @@
+{
+  "name": "prism",
+  "displayName": "[cyan]Prismatic",
+  "author": "[pink]cynthion21x & [orange]thekayperson",
+  "description": "Prismatic[] introduces lots of new technology capable of bending the very fabrics of reality.. \n \n - Made in Java -\n  ",
+  "version": "[grey]1.16.206.7 -BETA",
+  "minGameVersion": "137",
+
+  "main": "cynthion.prism.Prismatic",
+  "java": true
+}
